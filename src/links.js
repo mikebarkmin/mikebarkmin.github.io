@@ -9,10 +9,10 @@ export default [
   },
   {
     name: 'Publications',
-    id: 2
+    id: 3
   },
   {
     name: 'Contact',
-    id: 4
+    id: 5
   }
 ];

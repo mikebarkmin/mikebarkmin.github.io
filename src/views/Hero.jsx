@@ -74,14 +74,15 @@ const Hero = ({ children, offset }) => (
           top="65%"
         />
         <SVG
-          icon="react"
+          icon="mysql"
           width={16}
+          fill={colors['pink-light']}
           stroke={colors['pink-light']}
           left="28%"
           top="15%"
         />
         <SVG
-          icon="mysql"
+          icon="git"
           width={6}
           fill={colors['grey-darkest']}
           left="75%"
@@ -135,7 +136,7 @@ const Hero = ({ children, offset }) => (
         top="80%"
       />
       <SVG
-        icon="mysql"
+        icon="react"
         width={8}
         stroke={colors['grey-darker']}
         left="25%"
