@@ -9,7 +9,7 @@ import SVG from '../components/SVG';
 
 const Projects = ({ children, offset }) => (
   <>
-    <Content speed={0.4} offset={offset} factor={1.2}>
+    <Content speed={0.4} offset={offset} factor={2}>
       <Inner>{children}</Inner>
     </Content>
     <Divider speed={0.1} offset={offset} factor={2}>
