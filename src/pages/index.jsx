@@ -20,8 +20,8 @@ import About from '../views/About';
 import Contact from '../views/Contact';
 import Publications from '../views/Publications';
 
-import links from './links';
-import publications from './publications';
+import links from '../links';
+import publications from '../publications';
 
 import avatar from '../images/avatar.jpg';
 
