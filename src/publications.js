@@ -8,7 +8,7 @@ export default {
       publisher: 'ACM',
       book:
         'Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education',
-      link: null
+      link: '/presentations/2019-iticse.pdf'
     }
   ],
   2018: [
