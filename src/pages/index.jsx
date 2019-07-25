@@ -87,7 +87,7 @@ const Index = () => {
     <>
       <Layout />
       <Navigation onClick={onNavClick} links={links} />
-      <Parallax pages={6} ref={parallax}>
+      <Parallax pages={7} ref={parallax}>
         <Hero offset={0}>
           <BigTitle>
             Hello, <br /> I'm Mike.
@@ -157,7 +157,7 @@ const Index = () => {
               })}
           </PublicationsWrapper>
         </Publications>
-        <Contact offset={5} id="contact">
+        <Contact offset={6} id="contact">
           <Inner>
             <Title>Get in touch</Title>
             <ContactText>

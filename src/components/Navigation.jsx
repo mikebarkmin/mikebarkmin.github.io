@@ -22,7 +22,18 @@ const NavLi = styled.li`
 `;
 
 const NavButton = styled.button`
-  ${tw`text-white-500 hover:text-blue-500`}
+  ${tw`rounded p-2`};
+
+  background-color: #161719;
+  color: white;
+  font-weight: bold;
+  border: 2px solid;
+
+  &:hover {
+    background: linear-gradient(to right, #d4145a 0%, #fbb03b 100%);
+  }
+
+  font-family: 'sans';
 `;
 
 const Navigation = ({ onClick, links }) => {
