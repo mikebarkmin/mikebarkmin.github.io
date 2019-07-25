@@ -13,6 +13,6 @@ export default [
   },
   {
     name: 'Contact',
-    id: 5
+    id: 6
   }
 ];

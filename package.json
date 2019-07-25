@@ -1,22 +1,22 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "name": "mikebarkmin-personal-website",
+  "description": "Mike Barkmin - Personal Website",
+  "version": "1.0.0",
+  "author": "Mike Barkmin",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.13.7",
-    "gatsby-image": "^2.2.4",
-    "gatsby-plugin-google-analytics": "^2.1.1",
-    "gatsby-plugin-manifest": "^2.2.1",
-    "gatsby-plugin-netlify": "^2.1.0",
-    "gatsby-plugin-offline": "^2.2.1",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-sharp": "^2.2.3",
-    "gatsby-plugin-styled-components": "^3.1.0",
-    "gatsby-source-filesystem": "^2.1.2",
-    "gatsby-transformer-sharp": "^2.2.1",
+    "gatsby": "^2.13.39",
+    "gatsby-image": "^2.2.6",
+    "gatsby-plugin-manifest": "^2.2.4",
+    "gatsby-plugin-netlify": "^2.1.3",
+    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-transformer-remark": "^2.6.9",
+    "gatsby-transformer-sharp": "^2.2.4",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -24,15 +24,10 @@
     "react-spring": "^8.0.27",
     "styled-components": "^4.3.2",
     "tailwind.macro": "^0.5.10",
-    "tailwindcss": "^0.7.4",
+    "tailwindcss": "0.7.4",
     "typeface-cantata-one": "^0.0.72",
-    "typeface-open-sans": "^0.0.54"
+    "typeface-open-sans": "^0.0.75"
   },
-  "keywords": [
-    "gatsby",
-    "starter",
-    "portfolio"
-  ],
   "scripts": {
     "dev": "gatsby develop -o",
     "develop": "gatsby develop",
@@ -44,22 +39,22 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react": "^7.14.3",
     "gh-pages": "^2.0.1",
     "prettier": "^1.18.2"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "url": "https://github.com/mikebarkmin/personal-website",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
+    "url": "https://github.com/mikebarkmin/personal-website/issues"
   },
-  "homepage": "https://cara.lekoarts.de"
+  "homepage": "https://barkmin.eu"
 }
