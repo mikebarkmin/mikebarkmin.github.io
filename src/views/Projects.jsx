@@ -1,85 +1,70 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Divider } from '../elements/Dividers';
+import styled from 'styled-components';
 import Content from '../elements/Content';
+import { Title } from '../elements/Titles';
 import Inner from '../elements/Inner';
-import { UpDown, UpDownWide } from '../styles/animations';
-import { colors } from '../../tailwind';
-import SVG from '../components/SVG';
+import ProjectCard from '../components/ProjectCard';
+import Link from '../elements/Link';
 
-const Projects = ({ children, offset }) => (
-  <>
-    <Content speed={0.4} offset={offset} factor={2}>
-      <Inner>{children}</Inner>
-    </Content>
-    <Divider speed={0.1} offset={offset} factor={2}>
-      <UpDown>
-        <SVG icon="git" width={6} fill={colors.white} left="85%" top="75%" />
-        <SVG icon="react" width={8} fill={colors.teal} left="70%" top="20%" />
-        <SVG icon="vim" width={8} stroke={colors.orange} left="25%" top="5%" />
-        <SVG
-          icon="js"
-          hiddenMobile
-          width={24}
-          fill={colors['grey-darker']}
-          left="17%"
-          top="60%"
-        />
-      </UpDown>
-      <UpDownWide>
-        <SVG
-          icon="mysql"
-          hiddenMobile
-          width={16}
-          fill={colors.green}
-          left="20%"
-          top="90%"
-        />
-        <SVG
-          icon="java"
-          width={12}
-          stroke={colors.white}
-          left="90%"
-          top="30%"
-        />
-        <SVG
-          icon="docker"
-          width={16}
-          fill={colors.yellow}
-          left="70%"
-          top="90%"
-        />
-        <SVG
-          icon="triangle"
-          hiddenMobile
-          width={16}
-          stroke={colors.teal}
-          left="18%"
-          top="75%"
-        />
-        <SVG icon="gitlab" width={6} fill={colors.white} left="75%" top="10%" />
-        <SVG
-          icon="upDown"
-          hiddenMobile
-          width={8}
-          fill={colors.green}
-          left="45%"
-          top="10%"
-        />
-      </UpDownWide>
-      <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-      <SVG icon="circle" width={12} fill={colors.pink} left="80%" top="60%" />
-      <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-      <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
-      <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
-      <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
-    </Divider>
-  </>
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: auto;
+  justify-content: space-between;
+  margin-top: 8px;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+`;
+
+const Projects = () => (
+  <Content id="projects">
+    <Inner>
+      <Title>Projects</Title>
+      <Wrapper>
+        <ProjectCard
+          title="OpenPatch"
+          link="https://gitlab.com/openpatch"
+          bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+          tags={['flask', 'react', 'mysql']}
+        >
+          OpenPatch is an open source platform for assessment and training of
+          competencies.
+        </ProjectCard>
+        <ProjectCard
+          title="Processing Scratch"
+          link="https://github.com/mikebarkmin/processing-library-scratch"
+          bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+          tags={['processing', 'java']}
+        >
+          A processing library to ease the transition from scratch to processing
+        </ProjectCard>
+        <ProjectCard
+          title="Gestyled"
+          link="https://github.com/mikebarkmin/gestyled"
+          bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+          tags={['react', 'styled-components']}
+        >
+          A react component library based on styled-components.
+        </ProjectCard>
+        <ProjectCard
+          title="React to Everything"
+          link="https://github.com/mikebarkmin/react-to-everything"
+          bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+          tags={['react', 'react-native']}
+        >
+          Mobile, desktop and website Apps with the same code.
+        </ProjectCard>
+      </Wrapper>
+      <Link>More Projects</Link>
+    </Inner>
+  </Content>
 );
 
 export default Projects;
-
-Projects.propTypes = {
-  children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired
-};

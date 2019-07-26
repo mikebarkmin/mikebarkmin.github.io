@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-  position: absolute;
+  position: fixed;
   background: #000;
   width: 100%;
+  overflow-x: auto;
   left: 0;
   right: 0;
   color: white;
@@ -12,17 +13,19 @@ const Nav = styled.nav`
 `;
 
 const NavUl = styled.ul`
-  display: 'flex';
+  display: flex;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 `;
 
 const NavLi = styled.li`
-  margin-right: 6px;
   list-style-type: none;
 `;
 
-const NavButton = styled.button`
-  padding: 2px;
-
+const NavLink = styled.a`
+  margin: 0 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   background-color: #161719;
   color: white;
   font-weight: bold;
@@ -31,20 +34,15 @@ const NavButton = styled.button`
   &:hover {
     background: linear-gradient(to right, #d4145a 0%, #fbb03b 100%);
   }
-
-  font-family: 'sans';
 `;
 
-const Navigation = ({ onClick, links }) => {
-  const handleClick = id => () => {
-    onClick(id);
-  };
+const Navigation = ({ links }) => {
   return (
     <Nav>
       <NavUl>
-        {links.map(({ id, name }) => (
-          <NavLi key={id}>
-            <NavButton onClick={handleClick(id)}>{name}</NavButton>
+        {links.map(({ url, name }) => (
+          <NavLi key={url}>
+            <NavLink href={url}>{name}</NavLink>
           </NavLi>
         ))}
       </NavUl>

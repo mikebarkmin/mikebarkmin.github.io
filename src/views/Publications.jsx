@@ -1,108 +1,48 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Divider } from '../elements/Dividers';
+import styled from 'styled-components';
 import Content from '../elements/Content';
 import Inner from '../elements/Inner';
-import { UpDown, UpDownWide } from '../styles/animations';
-import { colors } from '../../tailwind';
-import SVG from '../components/SVG';
+import { Title, Subtitle } from '../elements/Titles';
+import PublicationCard from '../components/PublicationCard';
+import Link from '../elements/Link';
+import publications from '../publications';
 
-const Publications = ({ children, offset }) => (
-  <>
-    <Content speed={0.4} offset={offset} factor={2}>
-      <Inner>{children}</Inner>
+const PublicationsWrapper = styled.div`
+  display: grid;
+  grid-gap: 4rem;
+
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+  @media (max-width: 900px) {
+    grid-gap: 2rem;
+  }
+`;
+
+const Publications = () => {
+  const years = Object.keys(publications);
+  years.sort((a, b) => Number(b) - Number(a));
+  return (
+    <Content id="publications">
+      <Inner>
+        <Title>Publications</Title>
+        <PublicationsWrapper>
+          {years.map(year => {
+            const entries = publications[year];
+            const pubs = entries.map((entry, id) => (
+              <PublicationCard
+                key={id}
+                bg="linear-gradient(to right, BlueViolet 0%, DodgerBlue 100%)"
+                {...entry}
+              />
+            ));
+            return [<Subtitle key={year}>{year}</Subtitle>, ...pubs];
+          })}
+        </PublicationsWrapper>
+        <Link>More Publications</Link>
+      </Inner>
     </Content>
-    <Divider speed={0.1} offset={offset} factor={2}>
-      <UpDown>
-        <SVG
-          icon="box"
-          hiddenMobile
-          width={6}
-          fill={colors.blue}
-          left="50%"
-          top="75%"
-        />
-        <SVG
-          icon="upDown"
-          hiddenMobile
-          width={8}
-          fill={colors['grey-darkest']}
-          left="70%"
-          top="20%"
-        />
-        <SVG
-          icon="triangle"
-          width={8}
-          stroke={colors['grey-darkest']}
-          left="25%"
-          top="5%"
-        />
-        <SVG
-          icon="upDown"
-          hiddenMobile
-          width={24}
-          fill={colors.orange}
-          left="80%"
-          top="80%"
-        />
-      </UpDown>
-      <UpDownWide>
-        <SVG
-          icon="arrowUp"
-          hiddenMobile
-          width={16}
-          fill={colors.purple}
-          left="5%"
-          top="80%"
-        />
-        <SVG
-          icon="triangle"
-          width={12}
-          stroke={colors.white}
-          left="95%"
-          top="50%"
-        />
-        <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
-        <SVG
-          icon="upDown"
-          hiddenMobile
-          width={8}
-          fill={colors['grey-darkest']}
-          left="45%"
-          top="10%"
-        />
-      </UpDownWide>
-      <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
-      <SVG
-        icon="circle"
-        width={12}
-        fill={colors['grey-darkest']}
-        left="70%"
-        top="60%"
-      />
-      <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-      <SVG
-        icon="box"
-        width={12}
-        fill={colors['grey-darkest']}
-        left="20%"
-        top="30%"
-      />
-      <SVG
-        icon="hexa"
-        width={8}
-        stroke={colors['grey-darkest']}
-        left="80%"
-        top="70%"
-      />
-    </Divider>
-  </>
-);
-
-export default Publications;
-
-Publications.propTypes = {
-  children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired
+  );
 };
 
+export default Publications;
