@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import tw from 'tailwind.macro';
 
 const Nav = styled.nav`
   position: absolute;
@@ -13,16 +12,16 @@ const Nav = styled.nav`
 `;
 
 const NavUl = styled.ul`
-  ${tw`flex`};
+  display: 'flex';
 `;
 
 const NavLi = styled.li`
-  ${tw`mr-6`};
+  margin-right: 6px;
   list-style-type: none;
 `;
 
 const NavButton = styled.button`
-  ${tw`rounded p-2`};
+  padding: 2px;
 
   background-color: #161719;
   color: white;

@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import tw from 'tailwind.macro';
-import { width as twWidth } from '../../tailwind';
 import { hidden } from '../styles/utils';
 
 const Wrapper = styled.svg`
-  ${tw`absolute`};
+  position: absolute;
   stroke: currentColor;
   ${props => props.hiddenMobile && hidden};
   color: ${props => props.stroke};
@@ -177,7 +175,7 @@ const SVG = ({ stroke, fill, width, icon, left, top, hiddenMobile }) => (
     viewBox={icons[icon].viewBox}
     stroke={stroke}
     fill={fill}
-    svgWidth={twWidth[`${width}`]}
+    svgWidth={width}
     left={left}
     top={top}
     hiddenMobile={hiddenMobile}
