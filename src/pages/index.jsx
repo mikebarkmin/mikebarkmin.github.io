@@ -153,7 +153,12 @@ const Index = () => {
                     {...entry}
                   />
                 ));
-                return [<Subtitle id="subtitle">{year}</Subtitle>, ...pubs];
+                return [
+                  <Subtitle key={year} id="subtitle">
+                    {year}
+                  </Subtitle>,
+                  ...pubs
+                ];
               })}
           </PublicationsWrapper>
         </Publications>

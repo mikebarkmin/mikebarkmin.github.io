@@ -28,7 +28,7 @@ const Subtitle = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
-const ProjectCard = ({
+const PublicationCard = ({
   title,
   link,
   publisher,
@@ -48,16 +48,14 @@ const ProjectCard = ({
   </Wrapper>
 );
 
-export default ProjectCard;
+export default PublicationCard;
 
-ProjectCard.propTypes = {
+PublicationCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   publisher: PropTypes.string.isRequired,
   book: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-    .isRequired,
+  link: PropTypes.string,
   bg: PropTypes.string.isRequired,
   authors: PropTypes.arrayOf(PropTypes.string)
 };
