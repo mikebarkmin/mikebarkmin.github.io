@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
+    font-family: "Open Sans", sans;
+    color: white;
   }
   html {
     text-rendering: optimizeLegibility;
@@ -13,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #161719;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
   }
   html, body {
     width: 100%;

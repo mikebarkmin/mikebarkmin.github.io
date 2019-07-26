@@ -4,10 +4,12 @@ import styled from 'styled-components';
 
 const Wrapper = styled.a`
   width: 100%;
-  padding: 8px;
+  padding: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   color: white;
   position: relative;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
@@ -17,14 +19,16 @@ const Wrapper = styled.a`
 
 const Text = styled.div`
   opacity: 0.75;
-  font-family: sans;
+  font-size: 1rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
 const Title = styled.div`
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1.875rem;
   color: white;
-  text-decoration: uppercase;
-  padding-top: 8px;
+  padding-top: 2rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 

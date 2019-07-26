@@ -1,16 +1,4 @@
 export default {
-  2019: [
-    {
-      authors: ['Kramer, M.', 'Barkmin, M.', 'Brinda, T.'],
-      title: 'Identifying Predictors for Code Highlighting Skills',
-      subtitle:
-        'A regressional analysis of knowledge, syntax abilities and highlighting skills',
-      publisher: 'ACM',
-      book:
-        'Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education',
-      link: '/presentations/2019-iticse.pdf'
-    }
-  ],
   2018: [
     {
       authors: ['Kramer, M.', 'Barkmin, M.', 'Brinda, T.', 'Tobinski, D.'],
@@ -27,6 +15,18 @@ export default {
       publisher: 'ACM',
       book:
         'Proceedings of the 13th Workshop in Primary and Secondary Computing Education'
+    }
+  ],
+  2019: [
+    {
+      authors: ['Kramer, M.', 'Barkmin, M.', 'Brinda, T.'],
+      title: 'Identifying Predictors for Code Highlighting Skills',
+      subtitle:
+        'A regressional analysis of knowledge, syntax abilities and highlighting skills',
+      publisher: 'ACM',
+      book:
+        'Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education',
+      link: '/presentations/2019-iticse.pdf'
     }
   ]
 };

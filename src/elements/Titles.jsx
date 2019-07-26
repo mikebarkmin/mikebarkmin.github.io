@@ -7,6 +7,9 @@ export const Title = styled.h1`
   position: relative;
   display: inline-block;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 2.25rem;
+  letter-spacing: 0.05rem;
+  font-family: 'Cantata One', serif;
   &:before {
     content: '';
     width: 40px;
@@ -21,11 +24,16 @@ export const Title = styled.h1`
 `;
 
 export const BigTitle = styled.h1`
+  font-family: serif;
+  color: white;
+  font-size: 5rem;
   margin-bottom: 6px;
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
 export const Subtitle = styled.p`
-  margin-top: 8px;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 2rem;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;

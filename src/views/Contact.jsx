@@ -1,89 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Divider } from '../elements/Dividers';
 import Content from '../elements/Content';
-import { UpDown, UpDownWide, waveAnimation } from '../styles/animations';
-import SVG from '../components/SVG';
+import Inner from '../elements/Inner';
+import { Title } from '../elements/Titles';
 
-const WaveWrapper = styled.div`
-  position: absolute;
-  width: 100%;
-  transform: matrix(1, 0, 0, -1, 0, 0);
+const ContactText = styled.p`
+  font-size: 1.875rem;
+  color: lightgrey;
 `;
 
-const InnerWave = styled.div`
-  position: relative;
-  height: 100%;
-  svg {
-    width: 100%;
-    height: 40vh;
-  }
-  path {
-    ${waveAnimation('20s')};
-  }
-`;
-
-const Contact = ({ children, offset }) => (
-  <>
-    <Divider fill="#23262b" speed={0.2} offset={offset}>
-      <WaveWrapper>
-        <InnerWave>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 800 338.05"
-            preserveAspectRatio="none"
-          >
-            <path>
-              <animate
-                attributeName="d"
-                values="M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 200 150 400 200 Q 600 250 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z"
-                repeatCount="indefinite"
-                dur="30s"
-              />
-            </path>
-          </svg>
-        </InnerWave>
-      </WaveWrapper>
-    </Divider>
-    <Content speed={0.4} offset={offset}>
-      {children}
-    </Content>
-    <Divider speed={0.1} offset={offset}>
-      <UpDown>
-        <SVG
-          icon="upDown"
-          hiddenMobile
-          width={8}
-          fill="dimgrey"
-          left="70%"
-          top="20%"
-        />
-        <SVG icon="triangle" width={8} stroke="dimgrey" left="25%" top="5%" />
-      </UpDown>
-      <UpDownWide>
-        <SVG icon="triangle" width={12} stroke="white" left="95%" top="50%" />
-        <SVG icon="circle" width={6} fill="white" left="85%" top="15%" />
-        <SVG
-          icon="upDown"
-          hiddenMobile
-          width={8}
-          fill="dimgrey"
-          left="45%"
-          top="10%"
-        />
-      </UpDownWide>
-      <SVG icon="circle" width={6} fill="white" left="4%" top="20%" />
-      <SVG icon="circle" width={12} fill="dimgrey" left="70%" top="60%" />
-      <SVG icon="box" width={12} fill="dimgrey" left="20%" top="30%" />
-      <SVG icon="hexa" width={8} stroke="dimgrey" left="80%" top="70%" />
-    </Divider>
-  </>
+const Contact = () => (
+  <Content id="contact">
+    <Inner>
+      <Title>Get in touch</Title>
+      <ContactText>
+        Send me an <a href="mailto:mike@barkmin.eu">E-Mail</a> or say Hi to me
+        on{' '}
+        <a rel="noreferrer" href="https://twitter.com/mikebarkmin">
+          Twitter
+        </a>
+      </ContactText>
+    </Inner>
+  </Content>
 );
 
 export default Contact;
-
-Contact.propTypes = {
-  children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired
-};
