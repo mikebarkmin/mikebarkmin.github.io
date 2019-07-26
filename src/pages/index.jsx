@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
-import tw from 'tailwind.macro';
 import { Parallax } from 'react-spring/renderprops-addons.cjs';
 
 // Components
@@ -26,7 +25,10 @@ import publications from '../publications';
 import avatar from '../images/avatar.jpg';
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
+  display: flex;
+  flex-wrap: auto;
+  justify-content: space-between;
+  margin-top: 8px;
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
@@ -40,7 +42,6 @@ const ProjectsWrapper = styled.div`
 `;
 
 const PublicationsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
   grid-gap: 4rem;
 
@@ -52,28 +53,19 @@ const PublicationsWrapper = styled.div`
   }
 `;
 
-const AboutHero = styled.div`
-  ${tw`flex flex-col lg:flex-row items-center mt-8`};
-`;
-
 const Avatar = styled.img`
-  ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
-`;
-
-const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
-`;
-
-const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+  border-radius: 50%;
 `;
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  color: grey;
 `;
 
 const Footer = styled.footer`
-  ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
+  position: absolute;
+  padding: 6px;
+  text-algin: center;
+  color: grey;
 `;
 
 const Index = () => {
