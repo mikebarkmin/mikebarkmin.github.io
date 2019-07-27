@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
   }
+  img {
+    width: 100%;
+  }
   html, body {
     width: 100%;
     height: 100%;

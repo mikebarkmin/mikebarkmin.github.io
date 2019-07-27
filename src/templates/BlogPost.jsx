@@ -7,7 +7,8 @@ import { BlogNavigation } from '../pages/blog';
 
 const Wrapper = styled.div`
   padding: 0 6rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
+  line-height: 2;
 
   @media screen and (max-width: 800px) {
     padding: 0 1rem;
