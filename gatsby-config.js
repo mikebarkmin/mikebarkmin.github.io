@@ -72,6 +72,18 @@ module.exports = {
       }
     },
     /* Must be placed at the end */
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Mike Barkmin - Personal Website`,
+        short_name: `Mike Barkmin`,
+        start_url: `/`,
+        background_color: `#161619`,
+        theme_color: `#6e54d5`,
+        display: `standalone`
+      }
+    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-netlify'
   ]
 };
