@@ -36,6 +36,7 @@ const Wrapper = styled.div`
     grid-gap: 3rem;
   }
   @media (max-width: 900px) {
+    grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
 `;

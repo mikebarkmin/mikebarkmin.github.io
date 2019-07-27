@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   @media (max-width: 1200px) {
     grid-gap: 3rem;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
