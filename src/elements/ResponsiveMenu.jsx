@@ -8,17 +8,17 @@ const SmallMenu = styled.div`
   display: none;
   text-align: center;
   background: #000;
+  min-height: 80px;
   @media (max-width: ${props => props.size}) {
     display: block;
   }
-
-  transition: all 0.5s ease-in-out;
 `;
 
 const LargeMenu = styled.div`
   display: block;
   text-align: center;
   background: #000;
+  min-height: 80px;
   @media (max-width: ${props => props.size}) {
     display: none;
   }

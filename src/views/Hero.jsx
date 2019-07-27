@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Content from '../elements/Content';
-import { Title, BigTitle, Subtitle } from '../elements/Titles';
+import { BigTitle, Subtitle } from '../elements/Titles';
 import avatar from '../images/avatar.jpg';
 
 const Wrapper = styled.div`
@@ -23,7 +23,7 @@ const Hero = () => (
       <BigTitle>
         Hello, <br /> I'm Mike.
       </BigTitle>
-      <Avatar src={avatar} alt="John Doe" />
+      <Avatar src={avatar} alt="Mike Barkmin" />
       <Subtitle>
         I'm a passionate{' '}
         <a rel="noreferrer" href="https://github.com/mikebarkmin">

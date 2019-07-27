@@ -10,6 +10,7 @@ import 'typeface-open-sans';
 const Main = styled.main`
   max-width: 1400px;
   margin: auto;
+  margin-top: 80px;
 `;
 
 const Layout = ({ children }) => (

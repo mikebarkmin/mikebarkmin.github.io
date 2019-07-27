@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { Link as GLink } from 'gatsby';
 import { rotateAnimation } from '../styles/animations';
 import link from '../images/link.svg';
 
-const Link = styled.a`
+const Link = styled(GLink)`
   position: relative;
   border-radius: 0.5rem;
   border: 0px;

@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
     font-family: "Open Sans", sans;
     color: white;
+    transition: all 0.5s ease-in-out;
   }
   html {
     text-rendering: optimizeLegibility;
