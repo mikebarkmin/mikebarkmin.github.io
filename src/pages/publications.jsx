@@ -29,14 +29,12 @@ const Wrapper = styled.div`
 
   display: grid;
   grid-gap: 4rem;
-  grid-template-columns: 1fr 1fr;
   margin-top: 90px;
 
   @media (max-width: 1200px) {
     grid-gap: 3rem;
   }
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
 `;
@@ -59,7 +57,7 @@ export default Publications;
 
 export const pageQuery = graphql`
   query {
-    allPublicationsYaml {
+    allPublicationsYaml(sort: { fields: [year], order: DESC }) {
       edges {
         node {
           ...Publication

@@ -11,11 +11,7 @@ const Wrapper = styled.div`
   color: white;
   position: relative;
   border-radius: 0.5rem;
-  background: linear-gradient(
-    to right,
-    MediumSlateBlue 0%,
-    MediumTurquoise 100%
-  );
+  background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 `;
 
@@ -69,6 +65,19 @@ const DownloadLink = styled.a`
   transition: 0.5s all ease-out;
 `;
 
+const linearGradient = (c1, c2) => `linear-gradient(
+    to right,
+    ${c1} 0%,
+    ${c2} 100%
+  )`;
+
+const gradients = {
+  2020: linearGradient('Violet', 'DarkViolet'),
+  2019: linearGradient('Salmon', '#bb44bb'),
+  2018: linearGradient('SteelBlue', 'Teal'),
+  2017: linearGradient('ForestGreen', 'MediumSeaGreen')
+};
+
 const PublicationCard = ({
   title,
   year,
@@ -82,7 +91,7 @@ const PublicationCard = ({
   presentation,
   authors
 }) => (
-  <Wrapper>
+  <Wrapper bg={gradients[year]}>
     <Text>
       {year} - {series} - {location}
     </Text>
