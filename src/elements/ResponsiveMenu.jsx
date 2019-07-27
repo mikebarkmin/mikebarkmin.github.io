@@ -8,7 +8,7 @@ const SmallMenu = styled.div`
   display: none;
   text-align: center;
   background: #000;
-  min-height: 80px;
+  min-height: 52px;
   @media (max-width: ${props => props.size}) {
     display: block;
   }
