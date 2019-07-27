@@ -1,20 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import scroll from '../images/scroll.svg';
+import computer from '../images/computer.svg';
 
-const Wrapper = styled.a`
+const Wrapper = styled.div`
   width: 100%;
-  padding: 2rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 1rem;
   color: white;
   position: relative;
   border-radius: 0.5rem;
-  background: ${props => props.bg};
+  background: linear-gradient(
+    to right,
+    MediumSlateBlue 0%,
+    MediumTurquoise 100%
+  );
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  &:hover {
-    transform: translateY(-5px);
-  }
 `;
 
 const Text = styled.div`
@@ -39,40 +41,115 @@ const Subtitle = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
+const Download = styled.div`
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const DownloadLink = styled.a`
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.75rem;
+  border: 0;
+  width: 80px;
+  margin: 0 35px;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid orange;
+    border-radius: 0.2rem;
+  }
+
+  transition: 0.5s all ease-out;
+`;
+
 const PublicationCard = ({
   title,
-  link,
+  year,
   publisher,
-  book,
-  children,
-  bg,
+  address,
+  location,
+  series,
+  booktitle,
   subtitle,
+  paper,
+  presentation,
   authors
 }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
-    <Text>{children}</Text>
+  <Wrapper>
+    <Text>
+      {year} - {series} - {location}
+    </Text>
     <Title>{title}</Title>
     <Subtitle>{subtitle}</Subtitle>
     <Text>
-      {authors.join('; ')} In: {book}. {publisher}
+      {authors.join('; ')}. {year}. {booktitle}. {address}: {publisher}
     </Text>
+    <Download>
+      {paper !== null && (
+        <DownloadLink href={paper} target="_blank" rel="noopener noreferrer">
+          <img src={scroll} width={35} alt="Scroll" />
+          <span>Paper</span>
+        </DownloadLink>
+      )}
+      {presentation !== null && (
+        <DownloadLink
+          href={presentation}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={computer} width={35} alt="Computer" />
+          <span>Presentation</span>
+        </DownloadLink>
+      )}
+    </Download>
   </Wrapper>
 );
 
 export default PublicationCard;
 
 PublicationCard.propTypes = {
+  authors: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
-  publisher: PropTypes.string.isRequired,
-  book: PropTypes.string.isRequired,
-  link: PropTypes.string,
-  bg: PropTypes.string.isRequired,
-  authors: PropTypes.arrayOf(PropTypes.string)
+  booktitle: PropTypes.string,
+  year: PropTypes.number.isRequired,
+  location: PropTypes.string.isRequired,
+  publisher: PropTypes.string,
+  address: PropTypes.string,
+  presentation: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  paper: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
 };
 
 PublicationCard.defaultProps = {
   subtitle: null,
-  link: null,
+  booktitle: null,
+  presentation: null,
+  paper: null,
+  publisher: null,
+  address: null,
   authors: []
 };
+
+export const query = graphql`
+  fragment Publication on PublicationsYaml {
+    id
+    authors
+    title
+    subtitle
+    booktitle
+    series
+    year
+    location
+    publisher
+    address
+    paper
+    presentation
+  }
+`;

@@ -23,46 +23,23 @@ const Wrapper = styled.div`
   }
 `;
 
-const Projects = () => (
+const Projects = ({ projects }) => (
   <Content id="projects">
     <Inner>
-      <Title>Projects</Title>
+      <Title>Selected Projects</Title>
       <Wrapper>
-        <ProjectCard
-          title="OpenPatch"
-          link="https://gitlab.com/openpatch"
-          bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-          tags={['flask', 'react', 'mysql']}
-        >
-          OpenPatch is an open source platform for assessment and training of
-          competencies.
-        </ProjectCard>
-        <ProjectCard
-          title="Processing Scratch"
-          link="https://github.com/mikebarkmin/processing-library-scratch"
-          bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-          tags={['processing', 'java']}
-        >
-          A processing library to ease the transition from scratch to processing
-        </ProjectCard>
-        <ProjectCard
-          title="Gestyled"
-          link="https://github.com/mikebarkmin/gestyled"
-          bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-          tags={['react', 'styled-components']}
-        >
-          A react component library based on styled-components.
-        </ProjectCard>
-        <ProjectCard
-          title="React to Everything"
-          link="https://github.com/mikebarkmin/react-to-everything"
-          bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-          tags={['react', 'react-native']}
-        >
-          Mobile, desktop and website Apps with the same code.
-        </ProjectCard>
+        {projects.edges.map(({ node }, i) => (
+          <ProjectCard
+            key={node.id}
+            name={node.name}
+            link={node.link}
+            tags={node.tags}
+          >
+            {node.description}
+          </ProjectCard>
+        ))}
       </Wrapper>
-      <Link>More Projects</Link>
+      <Link to="/projects">More Projects</Link>
     </Inner>
   </Content>
 );

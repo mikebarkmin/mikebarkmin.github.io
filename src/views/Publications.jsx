@@ -5,7 +5,6 @@ import Inner from '../elements/Inner';
 import { Title, Subtitle } from '../elements/Titles';
 import PublicationCard from '../components/PublicationCard';
 import Link from '../elements/Link';
-import publications from '../publications';
 
 const PublicationsWrapper = styled.div`
   display: grid;
@@ -19,27 +18,17 @@ const PublicationsWrapper = styled.div`
   }
 `;
 
-const Publications = () => {
-  const years = Object.keys(publications);
-  years.sort((a, b) => Number(b) - Number(a));
+const Publications = ({ publications }) => {
   return (
     <Content id="publications">
       <Inner>
-        <Title>Publications</Title>
+        <Title>Selected Publications</Title>
         <PublicationsWrapper>
-          {years.map(year => {
-            const entries = publications[year];
-            const pubs = entries.map((entry, id) => (
-              <PublicationCard
-                key={id}
-                bg="linear-gradient(to right, BlueViolet 0%, DodgerBlue 100%)"
-                {...entry}
-              />
-            ));
-            return [<Subtitle key={year}>{year}</Subtitle>, ...pubs];
-          })}
+          {publications.edges.map(({ node }) => (
+            <PublicationCard key={node.id} {...node} />
+          ))}
         </PublicationsWrapper>
-        <Link>More Publications</Link>
+        <Link to="/publications">More Publications</Link>
       </Inner>
     </Content>
   );
