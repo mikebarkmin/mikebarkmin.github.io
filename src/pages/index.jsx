@@ -14,23 +14,23 @@ import Blog from '../views/Blog';
 const links = [
   {
     name: 'Home',
-    url: '#top'
+    url: '/#top'
   },
   {
     name: 'Projects',
-    url: '#projects'
+    url: '/#projects'
   },
   {
     name: 'Publications',
-    url: '#publications'
+    url: '/#publications'
   },
   {
     name: 'Blog',
-    url: '#blog'
+    url: '/#blog'
   },
   {
     name: 'Contact',
-    url: '#contact'
+    url: '/#contact'
   }
 ];
 
