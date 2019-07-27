@@ -17,16 +17,16 @@ const links = [
     url: '#top'
   },
   {
-    name: 'Blog',
-    url: '#blog'
-  },
-  {
     name: 'Projects',
     url: '#projects'
   },
   {
     name: 'Publications',
     url: '#publications'
+  },
+  {
+    name: 'Blog',
+    url: '#blog'
   },
   {
     name: 'Contact',
@@ -45,9 +45,9 @@ const Index = ({
     <Layout>
       <Navigation links={links} />
       <Hero />
-      <Blog posts={blogPosts} />
       <Projects projects={projects} />
       <Publications publications={publications} />
+      <Blog posts={blogPosts} />
       <Contact />
     </Layout>
   );
