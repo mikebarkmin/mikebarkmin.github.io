@@ -1,35 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
+import ResponsiveMenu from '../elements/ResponsiveMenu';
 
-const Nav = styled.nav`
+const Nav = styled.div`
   position: fixed;
-  background: #000;
-  width: 100%;
-  overflow-x: auto;
   left: 0;
   right: 0;
-  color: white;
-  z-index: 10;
+  top: 0;
+  z-index: 100;
 `;
 
 const NavUl = styled.ul`
-  display: flex;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: 800px) {
+    display: flex;
+    padding: 1rem;
+  }
 `;
 
 const NavLi = styled.li`
+  @media (min-width: 800px) {
+    padding: 0;
+    margin: 0 1rem;
+  }
   list-style-type: none;
 `;
 
 const NavLink = styled.a`
-  margin: 0 0.75rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #161719;
+  display: block;
   color: white;
   font-weight: bold;
-  border: 2px solid;
+  border-bottom: 1px solid;
 
   &:hover {
     background: linear-gradient(to right, #d4145a 0%, #fbb03b 100%);
@@ -39,13 +43,18 @@ const NavLink = styled.a`
 const Navigation = ({ links }) => {
   return (
     <Nav>
-      <NavUl>
-        {links.map(({ url, name }) => (
-          <NavLi key={url}>
-            <NavLink href={url}>{name}</NavLink>
-          </NavLi>
-        ))}
-      </NavUl>
+      <ResponsiveMenu
+        changeMenuOn="800px"
+        menu={
+          <NavUl>
+            {links.map(({ url, name }) => (
+              <NavLi key={url}>
+                <NavLink href={url}>{name}</NavLink>
+              </NavLi>
+            ))}
+          </NavUl>
+        }
+      />
     </Nav>
   );
 };
