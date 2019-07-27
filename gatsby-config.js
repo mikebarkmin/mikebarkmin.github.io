@@ -77,6 +77,7 @@ module.exports = {
       options: {
         name: `Mike Barkmin - Personal Website`,
         short_name: `Mike Barkmin`,
+        icon: `src/images/logo.png`,
         start_url: `/`,
         background_color: `#161619`,
         theme_color: `#6e54d5`,

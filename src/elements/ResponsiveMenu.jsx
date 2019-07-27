@@ -56,9 +56,17 @@ class ResponsiveMenu extends Component {
         <LargeMenu size={changeMenuOn}>{menu}</LargeMenu>
         <SmallMenu size={changeMenuOn}>
           {!showMenu ? (
-            <MenuIcon onClick={this.handleClick} icon={MenuSvg} />
+            <MenuIcon
+              aria-label="Open Menu"
+              onClick={this.handleClick}
+              icon={MenuSvg}
+            />
           ) : (
-            <MenuIcon onClick={this.handleClick} icon={CloseSvg} />
+            <MenuIcon
+              aria-label="Close Menu"
+              onClick={this.handleClick}
+              icon={CloseSvg}
+            />
           )}
           {showMenu ? <div>{menu}</div> : null}
         </SmallMenu>
