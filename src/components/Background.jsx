@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   bottom: 0;
   right: 0;
   overflow: hidden;
+  opacity: 0.4;
 `;
 
 const WaveWrapper = styled.div`

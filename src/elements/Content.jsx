@@ -6,6 +6,10 @@ const Content = styled.div`
   align-items: self-start;
   z-index: 50;
   padding: 6rem;
+
+  @media screen and (max-width: 800px) {
+    padding: 0.5rem;
+  }
 `;
 
 export default Content;
