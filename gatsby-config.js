@@ -61,29 +61,11 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'standalone',
-        icons: [
-          {
-            src: '/favicons/android-icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          }
-        ]
+        icon: config.icon,
+        display: 'standalone'
       }
     },
     /* Must be placed at the end */
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Mike Barkmin - Personal Website`,
-        short_name: `Mike Barkmin`,
-        icon: `src/images/logo.png`,
-        start_url: `/`,
-        background_color: `#161619`,
-        theme_color: `#6e54d5`,
-        display: `standalone`
-      }
-    },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify'
   ]
