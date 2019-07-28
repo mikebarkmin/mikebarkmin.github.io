@@ -10,11 +10,12 @@ module.exports = {
   siteLogo: '/logo.png', // Used for SEO and manifest
   siteDescription: 'Research and Development Portfolio of Mike Barkmin',
   author: 'Mike Barkmin', // Author for schema.org JSONLD
+  icon: 'src/images/logo.png',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@mikebarkmin', // Twitter Username
 
   // Manifest and Progress color
-  themeColor: 'orange',
-  backgroundColor: 'blue'
+  themeColor: '#6e54d5',
+  backgroundColor: '#161619'
 };
