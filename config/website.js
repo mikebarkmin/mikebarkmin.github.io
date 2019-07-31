@@ -11,7 +11,7 @@ module.exports = {
   siteBanner: '/banner.png', // Used for Social Preview
   siteDescription: 'Research and Development Portfolio of Mike Barkmin',
   author: 'Mike Barkmin', // Author for schema.org JSONLD
-  icon: '/logo.png',
+  icon: 'src/images/logo.png',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@mikebarkmin', // Twitter Username
