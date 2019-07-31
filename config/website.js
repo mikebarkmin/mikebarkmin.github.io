@@ -8,9 +8,10 @@ module.exports = {
   siteUrl: 'https://www.barkmin.eu', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest
+  siteBanner: '/banner.png', // Used for Social Preview
   siteDescription: 'Research and Development Portfolio of Mike Barkmin',
   author: 'Mike Barkmin', // Author for schema.org JSONLD
-  icon: 'src/images/logo.png',
+  icon: '/logo.png',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@mikebarkmin', // Twitter Username

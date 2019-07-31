@@ -20,6 +20,7 @@ const SEO = () => {
   const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
   const homeURL = `${config.siteUrl}${realPrefix}`;
   const image = `${homeURL}${config.siteLogo}`;
+  const banner = `${homeURL}${config.siteBanner}`;
 
   // schema.org in JSONLD format
   // https://developers.google.com/search/docs/guides/intro-structured-data
@@ -107,11 +108,8 @@ const SEO = () => {
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={banner} />
       <meta property="og:image:alt" content={description} />
-      {config.siteFBAppID && (
-        <meta property="fb:app_id" content={config.siteFBAppID} />
-      )}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:creator"
