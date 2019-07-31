@@ -117,7 +117,7 @@ const SEO = () => {
       />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={banner} />
       <meta name="twitter:image:alt" content={description} />
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgWebPage)}
