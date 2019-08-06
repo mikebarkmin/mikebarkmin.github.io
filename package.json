@@ -51,11 +51,11 @@
     "prettier": "^1.18.2"
   },
   "repository": {
-    "url": "https://github.com/mikebarkmin/personal-website",
+    "url": "https://github.com/mikebarkmin/mikebarkmin.github.io",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/mikebarkmin/personal-website/issues"
+    "url": "https://github.com/mikebarkmin/mikebarkmin.github.io/issues"
   },
   "homepage": "https://barkmin.eu"
 }

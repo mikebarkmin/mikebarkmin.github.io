@@ -14,7 +14,7 @@ function Footer() {
       &copy; 2019 by Mike Barkmin.{' '}
       <a
         rel="noreferrer"
-        href="https://github.com/mikebarkmin/personal-website"
+        href="https://github.com/mikebarkmin/mikebarkmin.github.io"
       >
         GitHub Repository
       </a>
