@@ -20,7 +20,7 @@ export function ProjectsNavigation() {
   return <Navigation links={links} />;
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   padding: 0 6rem;
 
   @media screen and (max-width: 800px) {

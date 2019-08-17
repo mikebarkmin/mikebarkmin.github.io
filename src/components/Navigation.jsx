@@ -3,14 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import ResponsiveMenu from '../elements/ResponsiveMenu';
 
-const Nav = styled.div`
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 100;
-`;
-
 const NavUl = styled.ul`
   padding: 0;
   margin: 0;
@@ -45,20 +37,18 @@ const NavLink = styled(Link)`
 
 const Navigation = ({ links }) => {
   return (
-    <Nav>
-      <ResponsiveMenu
-        changeMenuOn="800px"
-        menu={
-          <NavUl>
-            {links.map(({ url, name }) => (
-              <NavLi key={url}>
-                <NavLink to={url}>{name}</NavLink>
-              </NavLi>
-            ))}
-          </NavUl>
-        }
-      />
-    </Nav>
+    <ResponsiveMenu
+      changeMenuOn="800px"
+      menu={
+        <NavUl>
+          {links.map(({ url, name }) => (
+            <NavLi key={url}>
+              <NavLink to={url}>{name}</NavLink>
+            </NavLi>
+          ))}
+        </NavUl>
+      }
+    />
   );
 };
 

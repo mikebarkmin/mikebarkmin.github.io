@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import { BlogNavigation } from '../pages/blog';
 
-const Wrapper = styled.div`
+const Wrapper = styled.article`
   padding: 0 6rem;
   background: rgba(0, 0, 0, 0.7);
   line-height: 2;
