@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { rotateAnimation } from '../styles/animations';
 import triangle from '../images/triangle.svg';
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   color: white;
   position: relative;
   display: inline-block;

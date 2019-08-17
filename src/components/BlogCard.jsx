@@ -38,7 +38,7 @@ const BlogCard = ({
   timeToRead,
   excerpt
 }) => (
-  <Wrapper to={slug}>
+  <Wrapper to={slug} aria-label={title}>
     <Text>{`${date} - ${timeToRead} min`}</Text>
     <Title>{title}</Title>
     <Text>{excerpt} Read more</Text>

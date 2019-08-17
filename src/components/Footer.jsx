@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   padding: 1.5rem;
   text-align: center;
   width: 100%;
