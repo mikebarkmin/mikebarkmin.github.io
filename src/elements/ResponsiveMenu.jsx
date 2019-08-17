@@ -47,8 +47,6 @@ const ResponsiveMenu = ({ menu, changeMenuOn }) => {
     setShowMenu(!showMenu);
   }
 
-  console.log(match);
-
   return (
     <>
       {match ? (
