@@ -1,0 +1,13 @@
+pin: true
+name: Smartlights
+description: Smartlights recreate for different educational scenarios.
+link: https://github.com/mikebarkmin/smartlights
+tags:
+  - c
+  - python
+  - java
+  - node red
+  - raspberry
+  - node mcu
+
+
