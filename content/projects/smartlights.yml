@@ -1,6 +1,6 @@
 pin: true
 name: Smartlights
-description: Smartlights recreate for different educational scenarios.
+description: Smartlights recreated for different educational scenarios.
 link: https://github.com/mikebarkmin/smartlights
 tags:
   - c
