@@ -102,7 +102,7 @@ const PublicationCard = ({
     </Text>
     <Download>
       {paper !== null && (
-        <DownloadLink href={paper} target="_blank" rel="noopener noreferrer">
+        <DownloadLink href={paper} target="_blank">
           <img src={scroll} width={35} alt="Scroll" />
           <span>Paper</span>
         </DownloadLink>
