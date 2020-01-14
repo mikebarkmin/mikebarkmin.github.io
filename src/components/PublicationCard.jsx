@@ -98,7 +98,7 @@ const PublicationCard = ({
     <Title>{title}</Title>
     <Subtitle>{subtitle}</Subtitle>
     <Text>
-      {authors.join('; ')}. {year}. {booktitle}. {address}: {publisher}
+      {authors.join('; ')}{year ? ` ${year}` : null}{booktitle ? `. ${booktitle}` : null}{address ? `. ${address}` : null}{publisher ? `: ${publisher}` : null}
     </Text>
     <Download>
       {paper !== null && (
