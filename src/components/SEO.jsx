@@ -37,27 +37,27 @@ const SEO = () => {
     name: config.siteTitle,
     author: {
       '@type': 'Person',
-      name: config.author
+      name: config.author,
     },
     copyrightHolder: {
       '@type': 'Person',
-      name: config.author
+      name: config.author,
     },
     copyrightYear: '2019',
     creator: {
       '@type': 'Person',
-      name: config.author
+      name: config.author,
     },
     publisher: {
       '@type': 'Person',
-      name: config.author
+      name: config.author,
     },
     datePublished: '2019-01-17',
     dateModified: data.site.buildTime,
     image: {
       '@type': 'ImageObject',
-      url: image
-    }
+      url: image,
+    },
   };
 
   // Initial breadcrumb list
@@ -67,10 +67,10 @@ const SEO = () => {
       '@type': 'ListItem',
       item: {
         '@id': homeURL,
-        name: 'Homepage'
+        name: 'Homepage',
       },
-      position: 1
-    }
+      position: 1,
+    },
   ];
 
   const breadcrumb = {
@@ -78,7 +78,7 @@ const SEO = () => {
     '@type': 'BreadcrumbList',
     description: 'Breadcrumbs list',
     name: 'Breadcrumbs',
-    itemListElement
+    itemListElement,
   };
 
   return (
@@ -98,6 +98,12 @@ const SEO = () => {
         sizes="16x16"
         href="/favicons/favicon-16x16.png"
       />
+      <script
+        async
+        defer
+        data-domain="barkmin.eu"
+        src="https://plausible.io/js/plausible.js"
+      ></script>
       <link rel="shortcut icon" href="favicon.ico" />
       <meta name="msapplication-TileColor" content={config.backgroundColor} />
       <meta name="msapplication-config" content="browserconfig.xml" />
