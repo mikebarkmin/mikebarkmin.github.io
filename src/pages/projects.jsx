@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
@@ -9,12 +10,12 @@ export function ProjectsNavigation() {
   const links = [
     {
       name: 'Home',
-      url: '/'
+      url: '/',
     },
     {
       name: 'Projects',
-      url: '/projects'
-    }
+      url: '/projects',
+    },
   ];
 
   return <Navigation links={links} />;
@@ -56,6 +57,12 @@ function Projects({ data }) {
     </Layout>
   );
 }
+
+Projects.propTypes = {
+  data: PropTypes.shape({
+    allProjectsYaml: PropTypes.array,
+  }).isRequired,
+};
 
 export default Projects;
 

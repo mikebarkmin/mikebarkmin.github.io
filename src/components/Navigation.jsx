@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import ResponsiveMenu from '../elements/ResponsiveMenu';
@@ -51,5 +52,16 @@ const Navigation = ({ links }) => {
     />
   );
 };
+
+Navigation.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.shape({
+    url: PropTypes.string,
+    name: PropTypes.string
+  }))
+}
+
+Navigation.defaultProps = {
+  links: []
+}
 
 export default Navigation;

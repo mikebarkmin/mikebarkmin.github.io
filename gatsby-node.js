@@ -1,4 +1,5 @@
 const path = require('path');
+
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = ({ actions, graphql }) => {
@@ -24,9 +25,9 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
-      `).then(result => {
+      `).then((result) => {
         if (result.errors) {
-          return reject(result.errors);
+          reject(result.errors);
         }
 
         const BlogPost = path.resolve('./src/templates/BlogPost.jsx');
@@ -36,8 +37,8 @@ exports.createPages = ({ actions, graphql }) => {
             path: node.fields.slug,
             component: BlogPost,
             context: {
-              slug: node.fields.slug
-            }
+              slug: node.fields.slug,
+            },
           });
         });
       })
@@ -52,7 +53,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: `/blog${slug}`
+      value: `/blog${slug}`,
     });
   }
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import styled from 'styled-components';
 import GlobalStyle from '../styles/global';
 import SEO from './SEO';
@@ -26,5 +27,13 @@ const Layout = ({ children }) => (
     <Background />
   </>
 );
+
+Layout.propTypes = {
+  children: PropTypes.node
+}
+
+Layout.defaultProps = {
+  children: null
+}
 
 export default Layout;

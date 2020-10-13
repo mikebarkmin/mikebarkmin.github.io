@@ -103,7 +103,7 @@ const SEO = () => {
         defer
         data-domain="barkmin.eu"
         src="https://plausible.io/js/plausible.js"
-      ></script>
+      />
       <link rel="shortcut icon" href="favicon.ico" />
       <meta name="msapplication-TileColor" content={config.backgroundColor} />
       <meta name="msapplication-config" content="browserconfig.xml" />
