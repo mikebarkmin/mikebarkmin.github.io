@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import styled from 'styled-components';
 import Content from '../elements/Content';
 import { Title } from '../elements/Titles';
@@ -28,7 +29,7 @@ const Projects = ({ projects }) => (
     <Inner>
       <Title>Selected Projects</Title>
       <Wrapper>
-        {projects.edges.map(({ node }, i) => (
+        {projects.edges.map(({ node }) => (
           <ProjectCard
             key={node.id}
             name={node.name}
@@ -43,5 +44,17 @@ const Projects = ({ projects }) => (
     </Inner>
   </Content>
 );
+
+Projects.propTypes = {
+  projects: PropTypes.shape({
+    edges: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      link: PropTypes.string,
+      tags: PropTypes.array,
+      description: PropTypes.string
+    }))
+  }).isRequired
+}
 
 export default Projects;

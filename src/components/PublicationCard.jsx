@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   color: white;
   position: relative;
   border-radius: 0.5rem;
+  text-align: center;
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 `;
@@ -132,6 +133,7 @@ PublicationCard.propTypes = {
   location: PropTypes.string.isRequired,
   publisher: PropTypes.string,
   address: PropTypes.string,
+  series: PropTypes.string,
   presentation: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   paper: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
 };
@@ -140,6 +142,7 @@ PublicationCard.defaultProps = {
   subtitle: null,
   booktitle: null,
   presentation: null,
+  series: null,
   paper: null,
   publisher: null,
   address: null,

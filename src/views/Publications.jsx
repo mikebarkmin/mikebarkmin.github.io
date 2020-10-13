@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import styled from 'styled-components';
 import Content from '../elements/Content';
 import Inner from '../elements/Inner';
-import { Title, Subtitle } from '../elements/Titles';
+import { Title } from '../elements/Titles';
 import PublicationCard from '../components/PublicationCard';
 import Link from '../elements/Link';
 
@@ -33,5 +34,11 @@ const Publications = ({ publications }) => {
     </Content>
   );
 };
+
+Publications.propTypes = {
+  publications: PropTypes.shape({
+    edges: PropTypes.array
+  }).isRequired
+}
 
 export default Publications;

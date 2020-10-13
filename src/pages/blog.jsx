@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import styled from 'styled-components';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Navigation from '../components/Navigation';
 import BlogCard from '../components/BlogCard';
@@ -51,6 +52,12 @@ function Blog({ data }) {
       </Wrapper>
     </Layout>
   );
+}
+
+Blog.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.array
+  }).isRequired
 }
 
 export default Blog;

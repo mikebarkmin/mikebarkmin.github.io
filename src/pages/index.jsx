@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
@@ -52,6 +53,14 @@ const Index = ({
     </Layout>
   );
 };
+
+Index.propTypes = {
+  data: PropTypes.shape({
+    allPublicationsYaml: PropTypes.array,
+    allProjectsYaml: PropTypes.array,
+    allMarkdownRemark: PropTypes.array
+  }).isRequired
+}
 
 export default Index;
 

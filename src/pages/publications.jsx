@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
@@ -9,12 +10,12 @@ export function PublicationsNavigation() {
   const links = [
     {
       name: 'Home',
-      url: '/'
+      url: '/',
     },
     {
       name: 'Publications',
-      url: '/publications'
-    }
+      url: '/publications',
+    },
   ];
 
   return <Navigation links={links} />;
@@ -52,6 +53,12 @@ function Publications({ data }) {
     </Layout>
   );
 }
+
+Publications.propTypes = {
+  data: PropTypes.shape({
+    allPublicationsYaml: PropTypes.array,
+  }).isRequired,
+};
 
 export default Publications;
 

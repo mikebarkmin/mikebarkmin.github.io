@@ -21,11 +21,11 @@ const Hero = () => (
   <Content id="hero">
     <Wrapper>
       <BigTitle>
-        Hello, <br /> I'm Mike.
+        Hello, <br /> I&apos;m Mike.
       </BigTitle>
       <Avatar src={avatar} alt="Mike Barkmin" />
       <Subtitle>
-        I'm a passionate{' '}
+        I&apos;m a passionate{' '}
         <a rel="noreferrer" href="https://github.com/mikebarkmin">
           developer
         </a>{' '}

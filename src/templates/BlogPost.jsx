@@ -18,7 +18,7 @@ const Wrapper = styled.article`
 function BlogPost({ data }) {
   const {
     frontmatter: { title, date },
-    html
+    html,
   } = data.markdownRemark;
   return (
     <Layout>
@@ -32,7 +32,17 @@ function BlogPost({ data }) {
   );
 }
 
-BlogPost.propTypes = {};
+BlogPost.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        date: PropTypes.string,
+      }),
+      html: PropTypes.string,
+    }),
+  }).isRequired,
+};
 
 export default BlogPost;
 
