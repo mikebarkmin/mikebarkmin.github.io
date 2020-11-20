@@ -10,5 +10,5 @@ year: 2020
 location: Essen, Germany
 publisher: ACM
 address: New York, NY, USA
-presentation: null
-paper: null
+presentation: /files/publications/2020-wipsce-3.pdf
+paper: https://dl.acm.org/doi/10.1145/3421590.3421617?cid=99659217602
