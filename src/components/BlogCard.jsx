@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql, Link } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql, Link } from "gatsby";
+import styled from "styled-components";
 
 const Wrapper = styled(Link)`
   width: 100%;
@@ -33,13 +33,13 @@ const Title = styled.div`
 `;
 
 const BlogCard = ({
-  frontmatter: { date, title },
+  frontmatter: { title },
   fields: { slug },
   timeToRead,
-  excerpt
+  excerpt,
 }) => (
   <Wrapper to={slug} aria-label={title}>
-    <Text>{`${date} - ${timeToRead} min`}</Text>
+    <Text>{`${timeToRead} min`}</Text>
     <Title>{title}</Title>
     <Text>{excerpt} Read more</Text>
   </Wrapper>
@@ -50,13 +50,13 @@ export default BlogCard;
 BlogCard.propTypes = {
   frontmatter: PropTypes.shape({
     date: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
   }).isRequired,
   fields: PropTypes.shape({
-    slug: PropTypes.string.isRequired
+    slug: PropTypes.string.isRequired,
   }).isRequired,
   timeToRead: PropTypes.number.isRequired,
-  excerpt: PropTypes.string.isRequired
+  excerpt: PropTypes.string.isRequired,
 };
 
 export const query = graphql`

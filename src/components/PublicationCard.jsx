@@ -1,9 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
-import scroll from '../images/scroll.svg';
-import computer from '../images/computer.svg';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import scroll from "../images/scroll.svg";
+import computer from "../images/computer.svg";
+import movie from "../images/movie.svg";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -12,7 +13,7 @@ const Wrapper = styled.div`
   position: relative;
   border-radius: 0.5rem;
   text-align: center;
-  background: ${props => props.bg};
+  background: ${(props) => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 `;
 
@@ -73,10 +74,10 @@ const linearGradient = (c1, c2) => `linear-gradient(
   )`;
 
 const gradients = {
-  2020: linearGradient('Violet', 'DarkViolet'),
-  2019: linearGradient('Salmon', '#bb44bb'),
-  2018: linearGradient('SteelBlue', 'Teal'),
-  2017: linearGradient('ForestGreen', 'MediumSeaGreen')
+  2020: linearGradient("Violet", "DarkViolet"),
+  2019: linearGradient("Salmon", "#bb44bb"),
+  2018: linearGradient("SteelBlue", "Teal"),
+  2017: linearGradient("ForestGreen", "MediumSeaGreen"),
 };
 
 const PublicationCard = ({
@@ -90,7 +91,8 @@ const PublicationCard = ({
   subtitle,
   paper,
   presentation,
-  authors
+  video,
+  authors,
 }) => (
   <Wrapper bg={gradients[year]}>
     <Text>
@@ -99,13 +101,23 @@ const PublicationCard = ({
     <Title>{title}</Title>
     <Subtitle>{subtitle}</Subtitle>
     <Text>
-      {authors.join('; ')}{year ? ` ${year}` : null}{booktitle ? `. ${booktitle}` : null}{address ? `. ${address}` : null}{publisher ? `: ${publisher}` : null}
+      {authors.join("; ")}
+      {year ? ` ${year}` : null}
+      {booktitle ? `. ${booktitle}` : null}
+      {address ? `. ${address}` : null}
+      {publisher ? `: ${publisher}` : null}
     </Text>
     <Download>
       {paper !== null && (
         <DownloadLink href={paper} target="_blank">
           <img src={scroll} width={35} alt="Scroll" />
           <span>Paper</span>
+        </DownloadLink>
+      )}
+      {video !== null && (
+        <DownloadLink href={video} target="_blank">
+          <img src={movie} width={35} alt="Movie" />
+          <span>Video</span>
         </DownloadLink>
       )}
       {presentation !== null && (
@@ -135,7 +147,8 @@ PublicationCard.propTypes = {
   address: PropTypes.string,
   series: PropTypes.string,
   presentation: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  paper: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
+  paper: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  video: PropTypes.string,
 };
 
 PublicationCard.defaultProps = {
@@ -146,7 +159,8 @@ PublicationCard.defaultProps = {
   paper: null,
   publisher: null,
   address: null,
-  authors: []
+  video: null,
+  authors: [],
 };
 
 export const query = graphql`
@@ -162,6 +176,7 @@ export const query = graphql`
     publisher
     address
     paper
+    video
     presentation
   }
 `;

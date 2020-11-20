@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import { BlogNavigation } from '../pages/blog';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import { BlogNavigation } from "../pages/blog";
 
 const Wrapper = styled.article`
   padding: 0 6rem;
@@ -17,7 +17,8 @@ const Wrapper = styled.article`
 
 function BlogPost({ data }) {
   const {
-    frontmatter: { title, date },
+    frontmatter: { title },
+    timeToRead,
     html,
   } = data.markdownRemark;
   return (
@@ -25,7 +26,7 @@ function BlogPost({ data }) {
       <BlogNavigation />
       <Wrapper>
         <h1>{title}</h1>
-        <span>{date}</span>
+        <span>{timeToRead} min</span>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Wrapper>
     </Layout>
@@ -39,6 +40,7 @@ BlogPost.propTypes = {
         title: PropTypes.string,
         date: PropTypes.string,
       }),
+      timeToRead: PropTypes.number,
       html: PropTypes.string,
     }),
   }).isRequired,
@@ -51,6 +53,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
+      timeToRead
       frontmatter {
         title
       }
