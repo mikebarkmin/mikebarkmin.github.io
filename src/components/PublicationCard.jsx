@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
   text-align: center;
   background: ${(props) => props.bg};
+  box-shadow: ${(props) =>
+    props.active ? `0 0 20px 25px rgba(255, 153, 225, 0.5)` : null};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 `;
 
@@ -81,6 +83,7 @@ const gradients = {
 };
 
 const PublicationCard = ({
+  id,
   title,
   year,
   publisher,
@@ -89,60 +92,65 @@ const PublicationCard = ({
   series,
   booktitle,
   subtitle,
+  active,
   paper,
   presentation,
   video,
   authors,
 }) => (
-  <Wrapper bg={gradients[year]}>
-    <Text>
-      {year} - {series} - {location}
-    </Text>
-    <Title>{title}</Title>
-    <Subtitle>{subtitle}</Subtitle>
-    <Text>
-      {authors.join("; ")}
-      {year ? ` ${year}` : null}
-      {booktitle ? `. ${booktitle}` : null}
-      {address ? `. ${address}` : null}
-      {publisher ? `: ${publisher}` : null}
-    </Text>
-    <Download>
-      {paper !== null && (
-        <DownloadLink href={paper} target="_blank">
-          <img src={scroll} width={35} alt="Scroll" />
-          <span>Paper</span>
-        </DownloadLink>
-      )}
-      {video !== null && (
-        <DownloadLink href={video} target="_blank">
-          <img src={movie} width={35} alt="Movie" />
-          <span>Video</span>
-        </DownloadLink>
-      )}
-      {presentation !== null && (
-        <DownloadLink
-          href={presentation}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={computer} width={35} alt="Computer" />
-          <span>Presentation</span>
-        </DownloadLink>
-      )}
-    </Download>
-  </Wrapper>
+  <a href={`#${id}`}>
+    <Wrapper id={id} active={active} bg={gradients[year]}>
+      <Text>
+        {year} - {series} - {location}
+      </Text>
+      <Title>{title}</Title>
+      <Subtitle>{subtitle}</Subtitle>
+      <Text>
+        {authors.join("; ")}
+        {year ? ` ${year}` : null}
+        {booktitle ? `. ${booktitle}` : null}
+        {address ? `. ${address}` : null}
+        {publisher ? `: ${publisher}` : null}
+      </Text>
+      <Download>
+        {paper !== null && (
+          <DownloadLink href={paper} target="_blank">
+            <img src={scroll} width={35} alt="Scroll" />
+            <span>Paper</span>
+          </DownloadLink>
+        )}
+        {video !== null && (
+          <DownloadLink href={video} target="_blank">
+            <img src={movie} width={35} alt="Movie" />
+            <span>Video</span>
+          </DownloadLink>
+        )}
+        {presentation !== null && (
+          <DownloadLink
+            href={presentation}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={computer} width={35} alt="Computer" />
+            <span>Presentation</span>
+          </DownloadLink>
+        )}
+      </Download>
+    </Wrapper>
+  </a>
 );
 
 export default PublicationCard;
 
 PublicationCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  active: PropTypes.bool,
+  location: PropTypes.object.isRequired,
   authors: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   booktitle: PropTypes.string,
   year: PropTypes.number.isRequired,
-  location: PropTypes.string.isRequired,
   publisher: PropTypes.string,
   address: PropTypes.string,
   series: PropTypes.string,
@@ -152,6 +160,7 @@ PublicationCard.propTypes = {
 };
 
 PublicationCard.defaultProps = {
+  active: false,
   subtitle: null,
   booktitle: null,
   presentation: null,
