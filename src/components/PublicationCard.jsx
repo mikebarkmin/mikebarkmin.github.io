@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   position: relative;
   border-radius: 0.5rem;
   text-align: center;
+  scroll-margin: 120px;
   background: ${(props) => props.bg};
   box-shadow: ${(props) =>
     props.active ? `0 0 20px 25px rgba(255, 153, 225, 0.5)` : null};
