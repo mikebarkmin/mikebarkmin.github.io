@@ -1,20 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
-import PublicationCard from '../components/PublicationCard';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
+import PublicationCard from "../components/PublicationCard";
 
 export function PublicationsNavigation() {
   const links = [
     {
-      name: 'Home',
-      url: '/',
+      name: "Home",
+      url: "/",
     },
     {
-      name: 'Publications',
-      url: '/publications',
+      name: "Publications",
+      url: "/publications",
     },
   ];
 
@@ -40,14 +40,19 @@ const Wrapper = styled.div`
   }
 `;
 
-function Publications({ data }) {
+function Publications({ data, location }) {
   const { allPublicationsYaml: publications } = data;
   return (
     <Layout>
       <PublicationsNavigation />
       <Wrapper>
         {publications.edges.map(({ node }) => (
-          <PublicationCard {...node} key={node.id} />
+          <PublicationCard
+            {...node}
+            id={node.id}
+            active={node.id === location.hash?.substr(1)}
+            key={node.id}
+          />
         ))}
       </Wrapper>
     </Layout>
@@ -55,6 +60,7 @@ function Publications({ data }) {
 }
 
 Publications.propTypes = {
+  location: PropTypes.object.isRequired,
   data: PropTypes.shape({
     allPublicationsYaml: PropTypes.array,
   }).isRequired,
