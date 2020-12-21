@@ -113,13 +113,13 @@ const PublicationCard = ({
       </Text>
       <Download>
         {paper !== null && (
-          <DownloadLink href={paper} target="_blank">
+          <DownloadLink href={paper} target="_blank" rel="noopener">
             <img src={scroll} width={35} alt="Scroll" />
             <span>Paper</span>
           </DownloadLink>
         )}
         {video !== null && (
-          <DownloadLink href={video} target="_blank">
+          <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
             <img src={movie} width={35} alt="Movie" />
             <span>Video</span>
           </DownloadLink>
