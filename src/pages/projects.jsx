@@ -1,25 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
-import ProjectCard from '../components/ProjectCard';
-
-export function ProjectsNavigation() {
-  const links = [
-    {
-      name: 'Home',
-      url: '/',
-    },
-    {
-      name: 'Projects',
-      url: '/projects',
-    },
-  ];
-
-  return <Navigation links={links} />;
-}
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
+import ProjectCard from "../components/ProjectCard";
 
 const Wrapper = styled.main`
   padding: 0 6rem;
@@ -31,7 +16,7 @@ const Wrapper = styled.main`
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: 1fr 1fr;
-  margin-top: 90px;
+  margin-top: 120px;
 
   @media (max-width: 1200px) {
     grid-gap: 3rem;
@@ -46,7 +31,7 @@ function Projects({ data }) {
   const { allProjectsYaml: projects } = data;
   return (
     <Layout>
-      <ProjectsNavigation />
+      <Navigation />
       <Wrapper>
         {projects.edges.map(({ node }) => (
           <ProjectCard {...node} key={node.id}>

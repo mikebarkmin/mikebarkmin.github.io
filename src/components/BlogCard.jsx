@@ -10,7 +10,10 @@ const Wrapper = styled(Link)`
   display: block;
   position: relative;
   border-radius: 0.5rem;
-  background: linear-gradient(to right, #662d8c 0%, #ed1e79 100%);
+  border-color: #ed1e79;
+  border-style: solid;
+  border-width: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:hover {

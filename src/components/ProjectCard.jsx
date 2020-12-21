@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import styled from "styled-components";
 
 const Wrapper = styled.a`
   width: 100%;
@@ -9,9 +9,13 @@ const Wrapper = styled.a`
   padding-top: 6rem;
   padding-bottom: 6rem;
   color: white;
+  text-align: center;
   position: relative;
   border-radius: 0.5rem;
-  background: ${props => props.bg};
+  border-color: ${(props) => props.bg};
+  background-color: rgba(0, 0, 0, 0.5);
+  border-width: 4px;
+  border-style: solid;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     transform: translateY(-5px);
@@ -19,7 +23,7 @@ const Wrapper = styled.a`
 `;
 
 const Text = styled.div`
-  opacity: 0.75;
+  opacity: 0.85;
   font-size: 1rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
@@ -33,29 +37,31 @@ const Title = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
-const gradients = [
-  ['#D4145A', '#FBB03B'],
-  ['#662D8C', '#ED1E79'],
-  ['#009245', '#FCEE21'],
-  ['#D585FF', '#00FFEE']
+const colors = [
+  "#D4145A",
+  "#662D8C",
+  "#009245",
+  "#FCEE21",
+  "#D585FF",
+  "#00FFEE",
+  "#FBB03B",
+  "#ED1E79",
 ];
 
-let gradientId = -1;
+let colorId = -1;
 
 const ProjectCard = ({ name, link, children, tags = [] }) => {
-  gradientId = (gradientId + 1) % gradients.length;
+  colorId += 1;
   return (
     <Wrapper
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      bg={`linear-gradient(to right, ${gradients[gradientId][0]} 0%, ${
-        gradients[gradientId][1]
-      } 100%)`}
+      bg={`${colors[colorId % colors.length]}`}
     >
       <Text>{children}</Text>
       <Title>{name}</Title>
-      <Text>{tags.join(', ')}</Text>
+      <Text>{tags.join(", ")}</Text>
     </Wrapper>
   );
 };
@@ -67,11 +73,11 @@ ProjectCard.propTypes = {
   link: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
     .isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string)
+  tags: PropTypes.arrayOf(PropTypes.string),
 };
 
 ProjectCard.defaultProps = {
-  tags: []
+  tags: [],
 };
 
 export const query = graphql`

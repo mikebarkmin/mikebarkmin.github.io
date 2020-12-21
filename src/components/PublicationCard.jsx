@@ -14,14 +14,17 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
   text-align: center;
   scroll-margin: 120px;
-  background: ${(props) => props.bg};
+  border-color: ${(props) => props.bg};
+  border-style: solid;
+  border-width: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: ${(props) =>
     props.active ? `0 0 20px 25px rgba(255, 153, 225, 0.5)` : null};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 `;
 
 const Text = styled.div`
-  opacity: 0.75;
+  opacity: 0.85;
   font-size: 1rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
@@ -70,17 +73,12 @@ const DownloadLink = styled.a`
   transition: 0.5s all ease-out;
 `;
 
-const linearGradient = (c1, c2) => `linear-gradient(
-    to right,
-    ${c1} 0%,
-    ${c2} 100%
-  )`;
-
-const gradients = {
-  2020: linearGradient("Violet", "DarkViolet"),
-  2019: linearGradient("Salmon", "#bb44bb"),
-  2018: linearGradient("SteelBlue", "Teal"),
-  2017: linearGradient("ForestGreen", "MediumSeaGreen"),
+const colors = {
+  2021: "DarkViolet",
+  2020: "Violet",
+  2019: "Salmon",
+  2018: "SteelBlue",
+  2017: "ForestGreen",
 };
 
 const PublicationCard = ({
@@ -100,7 +98,7 @@ const PublicationCard = ({
   authors,
 }) => (
   <a href={`#${id}`}>
-    <Wrapper id={id} active={active} bg={gradients[year]}>
+    <Wrapper id={id} active={active} bg={colors[year]}>
       <Text>
         {year} - {series} - {location}
       </Text>

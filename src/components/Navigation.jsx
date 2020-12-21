@@ -1,12 +1,11 @@
-import React from 'react';
-import PropTypes from "prop-types";
-import styled from 'styled-components';
-import { Link } from 'gatsby';
-import ResponsiveMenu from '../elements/ResponsiveMenu';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import ResponsiveMenu from "../elements/ResponsiveMenu";
 
 const NavUl = styled.ul`
   padding: 0;
-  margin: 0;
+  margin: 0 0;
 
   @media (min-width: 800px) {
     display: flex;
@@ -15,6 +14,7 @@ const NavUl = styled.ul`
 `;
 
 const NavLi = styled.li`
+  margin: 1rem 0;
   @media (min-width: 800px) {
     padding: 0;
     margin: 0 1rem;
@@ -32,11 +32,35 @@ const NavLink = styled(Link)`
   border-top-right-radius: 0.5rem;
 
   &:hover {
-    background: linear-gradient(to right, #d4145a 0%, #fbb03b 100%);
+    border-bottom-color: #fbb03b;
+    color: #fbb03b;
   }
 `;
 
-const Navigation = ({ links }) => {
+const links = [
+  {
+    name: "Home",
+    url: "/",
+  },
+  {
+    name: "Projects",
+    url: "/projects",
+  },
+  {
+    name: "Publications",
+    url: "/publications",
+  },
+  {
+    name: "Blog",
+    url: "/blog",
+  },
+  {
+    name: "Contact",
+    url: "/#contact",
+  },
+];
+
+const Navigation = () => {
   return (
     <ResponsiveMenu
       changeMenuOn="800px"
@@ -53,15 +77,8 @@ const Navigation = ({ links }) => {
   );
 };
 
-Navigation.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.shape({
-    url: PropTypes.string,
-    name: PropTypes.string
-  }))
-}
+Navigation.propTypes = {};
 
-Navigation.defaultProps = {
-  links: []
-}
+Navigation.defaultProps = {};
 
 export default Navigation;

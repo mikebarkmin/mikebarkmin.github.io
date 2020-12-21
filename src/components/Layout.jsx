@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
-import styled from 'styled-components';
-import GlobalStyle from '../styles/global';
-import SEO from './SEO';
-import Footer from './Footer';
-import Background from './Background';
-import 'typeface-cantata-one';
-import 'typeface-open-sans';
+import styled from "styled-components";
+import GlobalStyle from "../styles/global";
+import SEO from "./SEO";
+import Footer from "./Footer";
+import Background from "./Background";
+import "typeface-cantata-one";
+import "typeface-open-sans";
 
 const Main = styled.main`
-  max-width: 1400px;
+  max-width: 1280px;
   margin: auto;
   margin-top: 80px;
 
@@ -29,11 +29,11 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node
-}
+  children: PropTypes.node,
+};
 
 Layout.defaultProps = {
-  children: null
-}
+  children: null,
+};
 
 export default Layout;
