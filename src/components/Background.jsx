@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import React from 'react';
-import { UpDown, UpDownWide, waveAnimation } from '../styles/animations';
-import SVG from './SVG';
+import styled from "styled-components";
+import React from "react";
+import { UpDown, UpDownWide, waveAnimation } from "../styles/animations";
+import SVG from "./SVG";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   bottom: 0;
   right: 0;
   overflow: hidden;
-  opacity: 0.4;
+  opacity: 0.2;
 `;
 
 const WaveWrapper = styled.div`
@@ -31,7 +31,7 @@ const InnerWave = styled.div`
     height: 40vh;
   }
   path {
-    ${waveAnimation('20s')};
+    ${waveAnimation("20s")};
   }
 `;
 

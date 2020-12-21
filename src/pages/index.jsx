@@ -1,50 +1,27 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby";
 
-import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
+import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
 
 // Views
-import Hero from '../views/Hero';
-import Projects from '../views/Projects';
-import Contact from '../views/Contact';
-import Publications from '../views/Publications';
-import Blog from '../views/Blog';
-
-const links = [
-  {
-    name: 'Home',
-    url: '/#top'
-  },
-  {
-    name: 'Projects',
-    url: '/#projects'
-  },
-  {
-    name: 'Publications',
-    url: '/#publications'
-  },
-  {
-    name: 'Blog',
-    url: '/#blog'
-  },
-  {
-    name: 'Contact',
-    url: '/#contact'
-  }
-];
+import Hero from "../views/Hero";
+import Projects from "../views/Projects";
+import Contact from "../views/Contact";
+import Publications from "../views/Publications";
+import Blog from "../views/Blog";
 
 const Index = ({
   data: {
     allPublicationsYaml: publications,
     allProjectsYaml: projects,
-    allMarkdownRemark: blogPosts
-  }
+    allMarkdownRemark: blogPosts,
+  },
 }) => {
   return (
     <Layout>
-      <Navigation links={links} />
+      <Navigation />
       <Hero />
       <Projects projects={projects} />
       <Publications publications={publications} />
@@ -58,9 +35,9 @@ Index.propTypes = {
   data: PropTypes.shape({
     allPublicationsYaml: PropTypes.array,
     allProjectsYaml: PropTypes.array,
-    allMarkdownRemark: PropTypes.array
-  }).isRequired
-}
+    allMarkdownRemark: PropTypes.array,
+  }).isRequired,
+};
 
 export default Index;
 

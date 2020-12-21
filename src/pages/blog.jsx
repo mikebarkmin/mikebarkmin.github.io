@@ -1,25 +1,10 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
-import styled from 'styled-components';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
-import BlogCard from '../components/BlogCard';
-
-export function BlogNavigation() {
-  const links = [
-    {
-      name: 'Home',
-      url: '/'
-    },
-    {
-      name: 'Blog',
-      url: '/blog'
-    }
-  ];
-
-  return <Navigation links={links} />;
-}
+import styled from "styled-components";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Navigation from "../components/Navigation";
+import BlogCard from "../components/BlogCard";
 
 const Wrapper = styled.main`
   padding: 0 6rem;
@@ -30,7 +15,7 @@ const Wrapper = styled.main`
 
   display: grid;
   grid-gap: 4rem;
-  margin-top: 90px;
+  margin-top: 120px;
 
   @media (max-width: 1200px) {
     grid-gap: 3rem;
@@ -44,7 +29,7 @@ function Blog({ data }) {
   const { allMarkdownRemark: posts } = data;
   return (
     <Layout>
-      <BlogNavigation />
+      <Navigation />
       <Wrapper>
         {posts.edges.map(({ node }) => (
           <BlogCard {...node} key={node.id} />
@@ -56,9 +41,9 @@ function Blog({ data }) {
 
 Blog.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.array
-  }).isRequired
-}
+    allMarkdownRemark: PropTypes.array,
+  }).isRequired,
+};
 
 export default Blog;
 

@@ -6,21 +6,6 @@ import Layout from "../components/Layout";
 import Navigation from "../components/Navigation";
 import PublicationCard from "../components/PublicationCard";
 
-export function PublicationsNavigation() {
-  const links = [
-    {
-      name: "Home",
-      url: "/",
-    },
-    {
-      name: "Publications",
-      url: "/publications",
-    },
-  ];
-
-  return <Navigation links={links} />;
-}
-
 const Wrapper = styled.div`
   padding: 0 6rem;
 
@@ -30,7 +15,7 @@ const Wrapper = styled.div`
 
   display: grid;
   grid-gap: 4rem;
-  margin-top: 90px;
+  margin-top: 120px;
 
   @media (max-width: 1200px) {
     grid-gap: 3rem;
@@ -44,7 +29,7 @@ function Publications({ data, location }) {
   const { allPublicationsYaml: publications } = data;
   return (
     <Layout>
-      <PublicationsNavigation />
+      <Navigation />
       <Wrapper>
         {publications.edges.map(({ node }) => (
           <PublicationCard

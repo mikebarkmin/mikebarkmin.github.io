@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import useMedia from '../hooks/useMedia';
-import MenuSvg from '../images/menu.svg';
-import CloseSvg from '../images/close.svg';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import useMedia from "../hooks/useMedia";
+import MenuSvg from "../images/menu.svg";
+import CloseSvg from "../images/close.svg";
 
 const SmallMenu = styled.nav`
   position: fixed;
@@ -11,9 +11,10 @@ const SmallMenu = styled.nav`
   left: 0;
   right: 0;
   z-index: 99;
+  padding-top: 15px;
   text-align: center;
   background: #000;
-  min-height: 52px;
+  min-height: 80px;
 `;
 
 const LargeMenu = styled.nav`
@@ -33,7 +34,7 @@ const LargeMenu = styled.nav`
 const MenuIcon = styled.button`
   width: 48px;
   height: 48px;
-  background: url(${props => props.icon});
+  background: url(${(props) => props.icon});
   border: 0;
 
   transition: all 0.5s ease-in-out;
@@ -74,7 +75,7 @@ const ResponsiveMenu = ({ menu, changeMenuOn }) => {
 };
 ResponsiveMenu.propTypes = {
   menu: PropTypes.node.isRequired,
-  changeMenuOn: PropTypes.string.isRequired
+  changeMenuOn: PropTypes.string.isRequired,
 };
 
 export default ResponsiveMenu;

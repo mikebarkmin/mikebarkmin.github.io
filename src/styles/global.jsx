@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
@@ -13,11 +13,44 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #161719;
+    background-color: #010;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
   }
+  table {
+    border: 1px solid #AEA;
+    border-collapse: collapse;
+  }
+  th, td {
+    border-bottom: 1px solid #AEA;
+  }
+  
+  pre[class*="language-"] {
+    background-color: transparent!important;
+    border-color: #fbb03b;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .gatsby-code-button-container {
+    top: 25px;
+    right: 1px;
+  }
+
+  .gatsby-highlight, pre[class*="language-"], code[class*="language-"] {
+    font-family: monospace;
+    background-color: transparent;
+  }
+
+  .gatsby-highlight pre[class*="language-"] {
+    padding: 2rem;
+  }
+
+  td, th {
+    padding: 1rem;
+  }
+
   img {
     width: 100%;
   }
@@ -28,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   a {
-    color: #e07628;
+    color: #fbb03b;
     text-decoration: none;
   }
 `;
