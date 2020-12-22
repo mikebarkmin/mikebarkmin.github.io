@@ -28,8 +28,15 @@ const Text = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
+const Citation = styled.div`
+  opacity: 0.85;
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+`;
+
 const Title = styled.div`
-  font-size: 1.875rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   padding-top: 2rem;
   letter-spacing: 0.05em;
@@ -39,8 +46,8 @@ const Title = styled.div`
 `;
 
 const Subtitle = styled.div`
-  padding-top: 2rem;
   letter-spacing: 0.05em;
+  font-size: 1.1rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
@@ -84,6 +91,7 @@ const colors = {
 const PublicationCard = ({
   id,
   title,
+  editors,
   year,
   publisher,
   address,
@@ -104,14 +112,15 @@ const PublicationCard = ({
       </Text>
       <Title>{title}</Title>
       <Subtitle>{subtitle}</Subtitle>
-      <Text>
+      <Citation>
         {authors.join("; ")}
         {year ? ` ${year}` : null}
-        {booktitle ? `. ${booktitle}` : null}
+        {editors ? `. In: ${editors.join("; ")} (ed.)` : null}
+        {booktitle ? `: ${booktitle}` : null}
         {address ? `. ${address}` : null}
 
         {publisher ? `: ${publisher}` : null}
-      </Text>
+      </Citation>
       <Download>
         {paper !== null && (
           <DownloadLink href={paper} target="_blank" rel="noopener">
@@ -146,6 +155,7 @@ PublicationCard.propTypes = {
   id: PropTypes.string.isRequired,
   active: PropTypes.bool,
   location: PropTypes.object.isRequired,
+  editors: PropTypes.arrayOf(PropTypes.string),
   authors: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
@@ -162,6 +172,7 @@ PublicationCard.propTypes = {
 PublicationCard.defaultProps = {
   active: false,
   subtitle: null,
+  editors: null,
   booktitle: null,
   presentation: null,
   series: null,
@@ -178,6 +189,7 @@ export const query = graphql`
     authors
     title
     subtitle
+    editors
     booktitle
     series
     year
