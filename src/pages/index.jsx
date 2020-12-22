@@ -21,7 +21,7 @@ const Index = ({
 }) => {
   return (
     <Layout>
-      <Navigation />
+      <Navigation active="Home" />
       <Hero />
       <Projects projects={projects} />
       <Publications publications={publications} />

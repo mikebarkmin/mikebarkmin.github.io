@@ -7,16 +7,10 @@ import Navigation from "../components/Navigation";
 import ProjectCard from "../components/ProjectCard";
 
 const Wrapper = styled.main`
-  padding: 0 6rem;
-
-  @media screen and (max-width: 800px) {
-    padding: 0 1rem;
-  }
-
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: 1fr 1fr;
-  margin-top: 120px;
+  margin-top: 40px;
 
   @media (max-width: 1200px) {
     grid-gap: 3rem;
@@ -31,7 +25,7 @@ function Projects({ data }) {
   const { allProjectsYaml: projects } = data;
   return (
     <Layout>
-      <Navigation />
+      <Navigation active="Projects" />
       <Wrapper>
         {projects.edges.map(({ node }) => (
           <ProjectCard {...node} key={node.id}>

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import ResponsiveMenu from "../elements/ResponsiveMenu";
@@ -25,7 +26,7 @@ const NavLi = styled.li`
 const NavLink = styled(Link)`
   padding: 0.5rem;
   display: block;
-  color: white;
+  color: ${(props) => (props.active ? "#fbb03b" : "white")};
   font-weight: bold;
   border-bottom: 1px solid;
   border-top-left-radius: 0.5rem;
@@ -58,9 +59,13 @@ const links = [
     name: "Contact",
     url: "/#contact",
   },
+  {
+    name: "Uses",
+    url: "/uses",
+  },
 ];
 
-const Navigation = () => {
+const Navigation = ({ active }) => {
   return (
     <ResponsiveMenu
       changeMenuOn="800px"
@@ -68,7 +73,9 @@ const Navigation = () => {
         <NavUl>
           {links.map(({ url, name }) => (
             <NavLi key={url}>
-              <NavLink to={url}>{name}</NavLink>
+              <NavLink to={url} active={active === name}>
+                {name}
+              </NavLink>
             </NavLi>
           ))}
         </NavUl>
@@ -77,8 +84,12 @@ const Navigation = () => {
   );
 };
 
-Navigation.propTypes = {};
+Navigation.propTypes = {
+  active: PropTypes.string,
+};
 
-Navigation.defaultProps = {};
+Navigation.defaultProps = {
+  active: null,
+};
 
 export default Navigation;

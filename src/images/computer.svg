@@ -11,7 +11,7 @@
    viewBox="0 0 72 72"
    version="1.1"
    sodipodi:docname="computer.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
   <metadata
      id="metadata18">
     <rdf:RDF>
@@ -20,6 +20,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -34,20 +35,23 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1912"
-     inkscape:window-height="1035"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
      id="namedview14"
      showgrid="false"
      inkscape:zoom="3.2777778"
-     inkscape:cx="36"
+     inkscape:cx="-38.691333"
      inkscape:cy="36"
      inkscape:window-x="0"
-     inkscape:window-y="41"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="emoji" />
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="emoji"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="true" />
   <g
      id="line"
-     style="stroke:#ffffff">
+     style="stroke:#ffffff"
+     transform="matrix(0.8553583,0,0,0.8553583,5.237939,5.7103388)">
     <path
        fill="none"
        stroke="#000000"
@@ -55,7 +59,7 @@
        stroke-linecap="round"
        stroke-linejoin="round"
        stroke-miterlimit="10"
-       d="M63.1941,56H9.2323c-2.8026,0-5.0746-2.272-5.0746-5.0746V16.033c0-2.8026,2.272-5.0746,5.0746-5.0746h53.9618 c2.8026,0,5.0746,2.272,5.0746,5.0746v34.8924C68.2687,53.728,65.9967,56,63.1941,56z"
+       d="M 63.1941,56 H 9.2323 C 6.4297,56 4.1577,53.728 4.1577,50.9254 V 16.033 c 0,-2.8026 2.272,-5.0746 5.0746,-5.0746 h 53.9618 c 2.8026,0 5.0746,2.272 5.0746,5.0746 V 50.9254 C 68.2687,53.728 65.9967,56 63.1941,56 Z"
        id="path2"
        style="stroke:#ffffff" />
     <path
@@ -65,7 +69,7 @@
        stroke-linecap="round"
        stroke-linejoin="round"
        stroke-miterlimit="10"
-       d="M68.2687,47.5629c0,0,0.1688,4.8556-1.5499,6.8305s-0.7221,1.6035-3.5247,1.6035H9.2323c-2.8026,0-4.164-1.852-4.164-2.4434 l-0.9106-5.9906"
+       d="m 68.2687,47.5629 c 0,0 0.1688,4.8556 -1.5499,6.8305 -1.7187,1.9749 -0.7221,1.6035 -3.5247,1.6035 H 9.2323 c -2.8026,0 -4.164,-1.852 -4.164,-2.4434 L 4.1577,47.5629"
        id="path4"
        style="stroke:#ffffff" />
     <path
@@ -75,7 +79,7 @@
        stroke-linecap="round"
        stroke-linejoin="round"
        stroke-miterlimit="10"
-       d="M63.1941,56H9.2323c-2.8026,0-5.0746-2.272-5.0746-5.0746V16.033c0-2.8026,2.272-5.0746,5.0746-5.0746h53.9618 c2.8026,0,5.0746,2.272,5.0746,5.0746v34.8924C68.2687,53.728,65.9967,56,63.1941,56z"
+       d="M 63.1941,56 H 9.2323 C 6.4297,56 4.1577,53.728 4.1577,50.9254 V 16.033 c 0,-2.8026 2.272,-5.0746 5.0746,-5.0746 h 53.9618 c 2.8026,0 5.0746,2.272 5.0746,5.0746 V 50.9254 C 68.2687,53.728 65.9967,56 63.1941,56 Z"
        id="path6"
        style="stroke:#ffffff" />
     <line
@@ -85,10 +89,10 @@
        stroke-linecap="round"
        stroke-linejoin="round"
        stroke-miterlimit="10"
-       x1="7.2132"
-       y1="48.4924"
-       x2="65.2132"
-       y2="48.4924"
+       x1="7.2132001"
+       y1="48.492401"
+       x2="65.213203"
+       y2="48.492401"
        id="line8"
        style="stroke:#ffffff" />
     <path
@@ -98,7 +102,7 @@
        stroke-linecap="round"
        stroke-linejoin="round"
        stroke-miterlimit="10"
-       d="M43.1833,60.9583c0,4.9583,8.8401,7.0417,8.8401,7.0417H36.4029h-0.3795H20.4029c0,0,8.8401-2.0833,8.8401-7.0417"
+       d="m 43.1833,60.9583 c 0,4.9583 8.8401,7.0417 8.8401,7.0417 H 36.4029 36.0234 20.4029 c 0,0 8.8401,-2.0833 8.8401,-7.0417"
        id="path10"
        style="stroke:#ffffff" />
   </g>

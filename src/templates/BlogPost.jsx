@@ -8,10 +8,14 @@ import Navigation from "../components/Navigation";
 const Wrapper = styled.article`
   padding: 2rem 6rem;
   background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  border-color: #ed1e79;
+  margin-top: 40px;
+  border-style: solid;
+  border-width: 4px;
   line-height: 2;
 
   @media screen and (max-width: 800px) {
-    margin-top: 40px;
     padding: 2rem 2rem;
   }
 `;
@@ -24,7 +28,7 @@ function BlogPost({ data }) {
   } = data.markdownRemark;
   return (
     <Layout>
-      <Navigation />
+      <Navigation active="Blog" />
       <Wrapper>
         <h1>{title}</h1>
         <span>{timeToRead} min</span>
