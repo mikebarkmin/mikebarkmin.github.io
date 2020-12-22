@@ -7,15 +7,9 @@ import Navigation from "../components/Navigation";
 import PublicationCard from "../components/PublicationCard";
 
 const Wrapper = styled.div`
-  padding: 0 6rem;
-
-  @media screen and (max-width: 800px) {
-    padding: 0 1rem;
-  }
-
   display: grid;
   grid-gap: 4rem;
-  margin-top: 120px;
+  margin-top: 40px;
 
   @media (max-width: 1200px) {
     grid-gap: 3rem;
@@ -29,7 +23,7 @@ function Publications({ data, location }) {
   const { allPublicationsYaml: publications } = data;
   return (
     <Layout>
-      <Navigation />
+      <Navigation active="Publications" />
       <Wrapper>
         {publications.edges.map(({ node }) => (
           <PublicationCard

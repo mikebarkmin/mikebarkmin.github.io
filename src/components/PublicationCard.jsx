@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 import scroll from "../images/scroll.svg";
 import computer from "../images/computer.svg";
-import movie from "../images/movie.svg";
+import camera from "../images/camera.svg";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -14,12 +14,11 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
   text-align: center;
   scroll-margin: 120px;
-  border-color: ${(props) => props.bg};
+  border-color: ${(props) => (props.active ? "#fbb03b" : props.bg)};
   border-style: solid;
   border-width: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: ${(props) =>
-    props.active ? `0 0 20px 25px rgba(255, 153, 225, 0.5)` : null};
+  background-color: ${(props) =>
+    props.active ? "rgba(251,176,59,0.1)" : "rgba(0, 0, 0, 0.5)"};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 `;
 
@@ -49,6 +48,7 @@ const Download = styled.div`
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 `;
 
@@ -97,7 +97,7 @@ const PublicationCard = ({
   video,
   authors,
 }) => (
-  <a href={`#${id}`}>
+  <Link to={`/publications#${id}`}>
     <Wrapper id={id} active={active} bg={colors[year]}>
       <Text>
         {year} - {series} - {location}
@@ -109,18 +109,19 @@ const PublicationCard = ({
         {year ? ` ${year}` : null}
         {booktitle ? `. ${booktitle}` : null}
         {address ? `. ${address}` : null}
+
         {publisher ? `: ${publisher}` : null}
       </Text>
       <Download>
         {paper !== null && (
           <DownloadLink href={paper} target="_blank" rel="noopener">
-            <img src={scroll} width={35} alt="Scroll" />
+            <img src={scroll} style={{ width: 60 }} alt="Scroll" />
             <span>Paper</span>
           </DownloadLink>
         )}
         {video !== null && (
           <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
-            <img src={movie} width={35} alt="Movie" />
+            <img src={camera} style={{ width: 60 }} alt="Movie" />
             <span>Video</span>
           </DownloadLink>
         )}
@@ -130,13 +131,13 @@ const PublicationCard = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={computer} width={35} alt="Computer" />
+            <img src={computer} style={{ width: 60 }} alt="Computer" />
             <span>Presentation</span>
           </DownloadLink>
         )}
       </Download>
     </Wrapper>
-  </a>
+  </Link>
 );
 
 export default PublicationCard;

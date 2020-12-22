@@ -7,15 +7,9 @@ import Navigation from "../components/Navigation";
 import BlogCard from "../components/BlogCard";
 
 const Wrapper = styled.main`
-  padding: 0 6rem;
-
-  @media screen and (max-width: 800px) {
-    padding: 0 1rem;
-  }
-
   display: grid;
   grid-gap: 4rem;
-  margin-top: 120px;
+  margin-top: 40px;
 
   @media (max-width: 1200px) {
     grid-gap: 3rem;
@@ -29,7 +23,7 @@ function Blog({ data }) {
   const { allMarkdownRemark: posts } = data;
   return (
     <Layout>
-      <Navigation />
+      <Navigation active="Blog" />
       <Wrapper>
         {posts.edges.map(({ node }) => (
           <BlogCard {...node} key={node.id} />

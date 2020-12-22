@@ -6,10 +6,8 @@ import MenuSvg from "../images/menu.svg";
 import CloseSvg from "../images/close.svg";
 
 const SmallMenu = styled.nav`
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 99;
   padding-top: 15px;
   text-align: center;
@@ -18,10 +16,15 @@ const SmallMenu = styled.nav`
 `;
 
 const LargeMenu = styled.nav`
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  border-radius: 0.5rem;
+  border-color: #fbb03b;
+  border-style: solid;
+  border-width: 4px;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   z-index: 99;
   display: block;
   text-align: center;

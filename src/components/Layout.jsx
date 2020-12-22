@@ -11,11 +11,6 @@ import "typeface-open-sans";
 const Main = styled.main`
   max-width: 1280px;
   margin: auto;
-  margin-top: 80px;
-
-  @media (max-width: 800px) {
-    margin-top: 52px;
-  }
 `;
 
 const Layout = ({ children }) => (

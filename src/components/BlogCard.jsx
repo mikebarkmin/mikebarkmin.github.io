@@ -13,6 +13,7 @@ const Wrapper = styled(Link)`
   border-color: #ed1e79;
   border-style: solid;
   border-width: 4px;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
