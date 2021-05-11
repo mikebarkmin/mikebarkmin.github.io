@@ -105,8 +105,8 @@ const PublicationCard = ({
   video,
   authors,
 }) => (
-  <Link to={`/publications#${id}`}>
-    <Wrapper id={id} active={active} bg={colors[year]}>
+  <Wrapper id={id} active={active} bg={colors[year]}>
+    <Link to={`/publications#${id}`}>
       <Text>
         {year} - {series} - {location}
       </Text>
@@ -121,32 +121,32 @@ const PublicationCard = ({
 
         {publisher ? `: ${publisher}` : null}
       </Citation>
-      <Download>
-        {paper !== null && (
-          <DownloadLink href={paper} target="_blank" rel="noopener">
-            <img src={scroll} style={{ width: 60 }} alt="Scroll" />
-            <span>Paper</span>
-          </DownloadLink>
-        )}
-        {video !== null && (
-          <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
-            <img src={camera} style={{ width: 60 }} alt="Movie" />
-            <span>Video</span>
-          </DownloadLink>
-        )}
-        {presentation !== null && (
-          <DownloadLink
-            href={presentation}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={computer} style={{ width: 60 }} alt="Computer" />
-            <span>Presentation</span>
-          </DownloadLink>
-        )}
-      </Download>
-    </Wrapper>
-  </Link>
+    </Link>
+    <Download>
+      {paper !== null && (
+        <DownloadLink href={paper} target="_blank" rel="noopener">
+          <img src={scroll} style={{ width: 60 }} alt="Scroll" />
+          <span>Paper</span>
+        </DownloadLink>
+      )}
+      {video !== null && (
+        <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
+          <img src={camera} style={{ width: 60 }} alt="Movie" />
+          <span>Video</span>
+        </DownloadLink>
+      )}
+      {presentation !== null && (
+        <DownloadLink
+          href={presentation}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={computer} style={{ width: 60 }} alt="Computer" />
+          <span>Presentation</span>
+        </DownloadLink>
+      )}
+    </Download>
+  </Wrapper>
 );
 
 export default PublicationCard;
