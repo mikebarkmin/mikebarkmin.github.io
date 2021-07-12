@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.jsx"],"names":["NotFound"],"mappings":"2FAAA,gCAQeA,UANf,WACE,OAAO","file":"component---src-pages-404-jsx-af995aef3fb35bf8e614.js","sourcesContent":["import React from 'react';\n\nfunction NotFound() {\n  return <div />;\n}\n\nNotFound.propTypes = {};\n\nexport default NotFound;\n"],"sourceRoot":""}

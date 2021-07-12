@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{ETdx:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),i=n.n(a),c=n("L6Je"),l=n("SNVY");t.default=function(){return i.a.createElement(c.a,null,i.a.createElement(l.a,{active:"Uses"}),i.a.createElement("div",null,"Mostly zsh and neovim. You can find my dotfiles"," ",i.a.createElement("a",{href:"https://github.com/mikebarkmin/dotfiles"},"here")))}}}]);
+//# sourceMappingURL=component---src-pages-uses-jsx-ec0d4c38cb0ff944eff3.js.map
