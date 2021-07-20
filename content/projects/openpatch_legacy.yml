@@ -1,8 +1,8 @@
-pin: true
-name: OpenPatch
+pin: false
+name: OpenPatch (Legacy)
 description: OpenPatch is an open source platform for assessment and training of competencies.
-link: https://github.com/openpatch
+link: https://gitlab.com/openpatch
 tags:
+  - flask
   - react
-  - mongodb
-  - nextjs
+  - mysql
