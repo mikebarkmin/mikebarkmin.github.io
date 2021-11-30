@@ -14,7 +14,6 @@
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-plugin-styled-components": "^3.10.0",
-    "gatsby-prismjs-dracula": "^0.1.15",
     "gatsby-remark-code-buttons": "^2.0.7",
     "gatsby-remark-prismjs": "^3.13.0",
     "gatsby-source-filesystem": "^2.11.1",
