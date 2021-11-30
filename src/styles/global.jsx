@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   th, td {
     border-bottom: 1px solid #AEA;
   }
-  
+
   pre[class*="language-"] {
     background-color: transparent!important;
     border-color: #fbb03b;
@@ -35,7 +35,21 @@ const GlobalStyle = createGlobalStyle`
 
   .gatsby-code-button-container {
     top: 25px;
-    right: 1px;
+    right: 10px;
+  }
+
+  .gatsby-code-button {
+    text-align: center;
+    border-radius: 8px;
+    background-color: #000;
+    border-color: #fbb03b;
+    border-width: 1px;
+    border-style: solid;
+    padding: 4px 8px;
+  }
+
+  .gatsby-code-button > svg {
+    display: none;
   }
 
   .gatsby-highlight, pre[class*="language-"], code[class*="language-"] {
