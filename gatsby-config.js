@@ -45,9 +45,14 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-code-buttons",
+            resolve: `gatsby-remark-table-of-contents`,
             options: {
-              buttonText: `Copy`,
+              exclude: "Table of Contents",
+              tight: true,
+              ordered: false,
+              fromHeading: 1,
+              toHeading: 6,
+              className: "table-of-contents",
             },
           },
           {
@@ -55,6 +60,10 @@ module.exports = {
             options: {
               showLineNumbers: false,
             },
+          },
+          {
+            resolve: "gatsby-remark-autolink-headers",
+            options: {  },
           },
         ],
       },
