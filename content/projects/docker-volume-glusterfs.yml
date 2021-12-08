@@ -2,6 +2,7 @@ pin: false
 name: Docker Volume GlusterFS
 description: This is a managed Docker volume plugin to allow Docker containers to access GlusterFS volumes.
 link: https://github.com/mikebarkmin/docker-volume-glusterfs
+weight: 0
 tags:
   - go
   - docker

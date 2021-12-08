@@ -53,7 +53,10 @@ export const query = graphql`
         }
       }
     }
-    allProjectsYaml(filter: { pin: { eq: true } }) {
+    allProjectsYaml(
+      sort: { fields: weight, order: DESC },
+      filter: { pin: { eq: true } }
+    ) {
       edges {
         node {
           ...Project

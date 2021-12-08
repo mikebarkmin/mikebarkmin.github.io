@@ -2,6 +2,7 @@ pin: true
 name: Smartlights
 description: Smartlights recreated for different educational scenarios.
 link: https://github.com/mikebarkmin/smartlights
+weight: 1
 tags:
   - c
   - python
@@ -9,5 +10,3 @@ tags:
   - node red
   - raspberry
   - node mcu
-
-
