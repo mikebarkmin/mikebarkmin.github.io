@@ -1,0 +1,7 @@
+pin: true
+name: Bitflow
+description: Bitflow is a ReactJS library for creating and conducting flow-based assessments.
+link: https://github.com/openpatch/bitflow
+weight: 10
+tags:
+  - reactjs

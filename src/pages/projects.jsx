@@ -47,7 +47,9 @@ export default Projects;
 
 export const pageQuery = graphql`
   query {
-    allProjectsYaml {
+    allProjectsYaml(
+      sort: { fields: weight, order: DESC }
+    ) {
       edges {
         node {
           ...Project
