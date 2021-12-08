@@ -101,7 +101,7 @@ const SEO = () => {
       <script
         async
         defer
-        data-domain="barkmin.eu"
+        data-domain="barkmin.eu,www.barkmin.eu"
         src="https://plausible.io/js/plausible.js"
       />
       <link rel="shortcut icon" href="favicon.ico" />
