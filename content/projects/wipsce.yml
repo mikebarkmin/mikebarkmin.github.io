@@ -1,0 +1,8 @@
+pin: false
+name: WiPCSE
+description: "Website for the WiPCSE 2020"
+link: https://git.uni-due.de/ddi/wipsce-website
+weight: 1
+tags:
+  - php
+  - css

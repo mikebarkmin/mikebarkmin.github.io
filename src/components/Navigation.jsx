@@ -52,6 +52,10 @@ const links = [
     url: "/publications",
   },
   {
+    name: "Talks",
+    url: "/talks",
+  },
+  {
     name: "Blog",
     url: "/blog",
   },
@@ -68,7 +72,7 @@ const links = [
 const Navigation = ({ active }) => {
   return (
     <ResponsiveMenu
-      changeMenuOn="800px"
+      changeMenuOn="900px"
       menu={
         <NavUl>
           {links.map(({ url, name }) => (

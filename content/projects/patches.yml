@@ -2,7 +2,7 @@ pin: true
 name: Patches
 description: Patches is a Design System mainly build for OpenPatch and associated products.
 link: https://github.com/openpatch/patches
-weight: 10
+weight: 1
 tags:
   - reactjs
   - emotion

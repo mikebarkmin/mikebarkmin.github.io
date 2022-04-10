@@ -61,7 +61,7 @@ const ProjectCard = ({ name, link, children, tags = [] }) => {
     >
       <Text>{children}</Text>
       <Title>{name}</Title>
-      <Text>{tags.join(", ")}</Text>
+      <Text>{tags?.join(", ")}</Text>
     </Wrapper>
   );
 };

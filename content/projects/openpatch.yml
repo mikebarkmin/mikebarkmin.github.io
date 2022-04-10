@@ -1,8 +1,7 @@
 pin: true
 name: OpenPatch
-description: OpenPatch is an open source platform for assessment and training of competencies.
-link: https://github.com/openpatch
+description: OpenPatch is an organisation for improving assessment and training of programming competencies.
+link: https://openpatch.org
 weight: 11
 tags:
-  - supabase
-  - nextjs
+  - organisation

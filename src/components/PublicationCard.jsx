@@ -104,57 +104,58 @@ const PublicationCard = ({
   presentation,
   video,
   authors,
-}) => (
-  <Wrapper id={id} active={active} bg={colors[year]}>
-    <Link to={`/publications#${id}`}>
-      <Text>
-        {year} - {series} - {location}
-      </Text>
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
-      <Citation>
-        {authors.join("; ")}
-        {year ? ` ${year}` : null}
-        {editors ? `. In: ${editors.join("; ")} (ed.)` : null}
-        {booktitle ? `: ${booktitle}` : null}
-        {address ? `. ${address}` : null}
+}) => {
+  const head = [year, series, location];
+  return (
+    <Wrapper id={id} active={active} bg={colors[year]}>
+      <Link to={`/publications#${id}`}>
+        <Text>{head.filter((t) => t !== null).join(" - ")}</Text>
+        <Title>{title}</Title>
+        <Subtitle>{subtitle}</Subtitle>
+        <Citation>
+          {authors.join("; ")}
+          {year ? ` ${year}` : null}
+          {editors ? `. In: ${editors.join("; ")} (ed.)` : null}
+          {booktitle ? `: ${booktitle}` : null}
+          {address ? `. ${address}` : null}
 
-        {publisher ? `: ${publisher}` : null}
-      </Citation>
-    </Link>
-    <Download>
-      {paper !== null && (
-        <DownloadLink href={paper} target="_blank" rel="noopener">
-          <img src={scroll} style={{ width: 60 }} alt="Scroll" />
-          <span>Paper</span>
-        </DownloadLink>
-      )}
-      {video !== null && (
-        <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
-          <img src={camera} style={{ width: 60 }} alt="Movie" />
-          <span>Video</span>
-        </DownloadLink>
-      )}
-      {presentation !== null && (
-        <DownloadLink
-          href={presentation}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={computer} style={{ width: 60 }} alt="Computer" />
-          <span>Presentation</span>
-        </DownloadLink>
-      )}
-    </Download>
-  </Wrapper>
-);
+          {publisher ? `: ${publisher}` : null}
+        </Citation>
+      </Link>
+      <Download>
+        {paper !== null && (
+          <DownloadLink href={paper} target="_blank" rel="noopener">
+            <img src={scroll} style={{ width: 60 }} alt="Scroll" />
+            <span>Paper</span>
+          </DownloadLink>
+        )}
+        {video !== null && (
+          <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
+            <img src={camera} style={{ width: 60 }} alt="Movie" />
+            <span>Video</span>
+          </DownloadLink>
+        )}
+        {presentation !== null && (
+          <DownloadLink
+            href={presentation}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={computer} style={{ width: 60 }} alt="Computer" />
+            <span>Presentation</span>
+          </DownloadLink>
+        )}
+      </Download>
+    </Wrapper>
+  );
+};
 
 export default PublicationCard;
 
 PublicationCard.propTypes = {
   id: PropTypes.string.isRequired,
   active: PropTypes.bool,
-  location: PropTypes.object.isRequired,
+  location: PropTypes.object,
   editors: PropTypes.arrayOf(PropTypes.string),
   authors: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
