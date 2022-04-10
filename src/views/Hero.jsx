@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Content from '../elements/Content';
-import { BigTitle, Subtitle } from '../elements/Titles';
-import avatar from '../images/avatar.jpg';
+import React from "react";
+import styled from "styled-components";
+import Content from "../elements/Content";
+import { BigTitle, Subtitle } from "../elements/Titles";
+import avatar from "../images/avatar.jpg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,16 +25,20 @@ const Hero = () => (
       </BigTitle>
       <Avatar src={avatar} alt="Mike Barkmin" />
       <Subtitle>
-        I&apos;m a passionate{' '}
+        I&apos;m a passionate{" "}
         <a rel="noreferrer" href="https://github.com/mikebarkmin">
           developer
-        </a>{' '}
-        and{' '}
+        </a>
+        ,{" "}
         <a rel="noreferrer" href="https://udue.de/mba">
           researcher
-        </a>{' '}
+        </a>{" "}
         at the University of Duisburg-Essen at the chair of Computer Science
-        Education.
+        Education and{" "}
+        <a rel="noreferrer" href="https://openpatch.org">
+          head
+        </a>{" "}
+        of the OpenPatch organisation.
       </Subtitle>
     </Wrapper>
   </Content>

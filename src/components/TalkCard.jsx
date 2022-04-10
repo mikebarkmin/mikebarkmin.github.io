@@ -88,7 +88,7 @@ const colors = {
   2017: "ForestGreen",
 };
 
-const PublicationCard = ({
+const TalkCard = ({
   id,
   title,
   editors,
@@ -104,100 +104,70 @@ const PublicationCard = ({
   presentation,
   video,
   authors,
-}) => {
-  const head = [year, series, location];
-  return (
-    <Wrapper id={id} active={active} bg={colors[year]}>
-      <Link to={`/publications#${id}`}>
-        <Text>{head.filter((t) => t !== null).join(" - ")}</Text>
-        <Title>{title}</Title>
-        <Subtitle>{subtitle}</Subtitle>
-        <Citation>
-          {authors.join("; ")}
-          {year ? ` ${year}` : null}
-          {editors ? `. In: ${editors.join("; ")} (ed.)` : null}
-          {booktitle ? `: ${booktitle}` : null}
-          {address ? `. ${address}` : null}
+}) => (
+  <Wrapper id={id} active={active} bg={colors[year]}>
+    <Link to={`/publications#${id}`}>
+      <Text>
+        {year} - {series} - {location}
+      </Text>
+      <Title>{title}</Title>
+      <Subtitle>{subtitle}</Subtitle>
+      <Citation>
+        {authors.join("; ")}
+        {year ? ` ${year}` : null}
+      </Citation>
+    </Link>
+    <Download>
+      {video !== null && (
+        <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
+          <img src={camera} style={{ width: 60 }} alt="Movie" />
+          <span>Video</span>
+        </DownloadLink>
+      )}
+      {presentation !== null && (
+        <DownloadLink
+          href={presentation}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={computer} style={{ width: 60 }} alt="Computer" />
+          <span>Presentation</span>
+        </DownloadLink>
+      )}
+    </Download>
+  </Wrapper>
+);
 
-          {publisher ? `: ${publisher}` : null}
-        </Citation>
-      </Link>
-      <Download>
-        {paper !== null && (
-          <DownloadLink href={paper} target="_blank" rel="noopener">
-            <img src={scroll} style={{ width: 60 }} alt="Scroll" />
-            <span>Paper</span>
-          </DownloadLink>
-        )}
-        {video !== null && (
-          <DownloadLink href={video} target="_blank" rel="noopener noreferrer">
-            <img src={camera} style={{ width: 60 }} alt="Movie" />
-            <span>Video</span>
-          </DownloadLink>
-        )}
-        {presentation !== null && (
-          <DownloadLink
-            href={presentation}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={computer} style={{ width: 60 }} alt="Computer" />
-            <span>Presentation</span>
-          </DownloadLink>
-        )}
-      </Download>
-    </Wrapper>
-  );
-};
+export default TalkCard;
 
-export default PublicationCard;
-
-PublicationCard.propTypes = {
+TalkCard.propTypes = {
   id: PropTypes.string.isRequired,
   active: PropTypes.bool,
-  location: PropTypes.object,
-  editors: PropTypes.arrayOf(PropTypes.string),
   authors: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
-  booktitle: PropTypes.string,
-  year: PropTypes.number.isRequired,
-  publisher: PropTypes.string,
-  address: PropTypes.string,
   series: PropTypes.string,
+  year: PropTypes.number.isRequired,
   presentation: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  paper: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   video: PropTypes.string,
 };
 
-PublicationCard.defaultProps = {
+TalkCard.defaultProps = {
   active: false,
   subtitle: null,
-  editors: null,
-  booktitle: null,
   presentation: null,
-  series: null,
-  paper: null,
-  publisher: null,
-  address: null,
   video: null,
   authors: [],
 };
 
 export const query = graphql`
-  fragment Publication on PublicationsYaml {
+  fragment Talk on TalksYaml {
     id
     authors
-    title
-    subtitle
-    editors
-    booktitle
     series
+    title
     year
     location
-    publisher
-    address
-    paper
     video
     presentation
   }

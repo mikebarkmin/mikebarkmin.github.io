@@ -26,8 +26,8 @@ const LargeMenu = styled.nav`
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   z-index: 99;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   background: #000;
   min-height: 80px;
 

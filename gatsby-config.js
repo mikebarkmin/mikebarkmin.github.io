@@ -39,6 +39,13 @@ module.exports = {
         name: `publications`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/talks`,
+        name: `talks`,
+      },
+    },
     "gatsby-transformer-yaml",
     {
       resolve: `gatsby-transformer-remark`,
