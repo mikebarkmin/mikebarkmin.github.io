@@ -5,7 +5,7 @@
   "author": "Mike Barkmin",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-styled-components": "^2.0.2",
+    "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.3.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^4.3.0",
