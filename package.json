@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
-    "gatsby": "^4.25.0",
+    "gatsby": "^4.25.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^4.25.0",
     "gatsby-plugin-netlify": "^3.14.0",
@@ -19,7 +19,7 @@
     "gatsby-remark-prismjs": "^6.25.0",
     "gatsby-remark-table-of-contents": "^1.0.0",
     "gatsby-source-filesystem": "^4.25.0",
-    "gatsby-transformer-remark": "^5.25.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.25.0",
     "gatsby-transformer-yaml": "^4.25.0",
     "prismjs": "^1.25.0",
