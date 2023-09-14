@@ -79,8 +79,8 @@ function Uses() {
           <li>
             I am also using a bunch of other desktop apps, which you can find in
             my{" "}
-            <a href="https://github.com/mikebarkmin/silberblau/blob/main/group_vars/all">
-              Ansible Playbook
+            <a href="https://github.com/mikebarkmin/silberblau/blob/live/config/yafti.yml">
+              UBlue configuration
             </a>
           </li>
         </ul>
@@ -103,9 +103,8 @@ function Uses() {
             <a href="https://torsion.org/borgmatic/">borgmatic</a>.
           </li>
           <li>
-            I am also trying to keep my system configure with an Ansible
-            Playbook. You can find it{" "}
-            <a href="https://github.com/mikebarkmin/.dotfiles">here</a>.
+            I am also trying to keep my system immutable by using my custom Fedora Silverblue image. You can find it{" "}
+            <a href="https://github.com/mikebarkmin/silberblau">here</a>.
           </li>
         </ul>
       </Wrapper>
