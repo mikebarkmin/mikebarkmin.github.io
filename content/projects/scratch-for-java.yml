@@ -1,0 +1,8 @@
+pin: true
+name: Scratch for Java
+description: A Java library to ease the transition from Scratch to Java
+link: https://scratch4j.openpatch.org
+weight: 9
+tags:
+  - scratch
+  - java

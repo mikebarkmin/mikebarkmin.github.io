@@ -31,10 +31,9 @@ const Hero = () => (
         </a>
         ,{" "}
         <a rel="noreferrer" href="https://udue.de/mba">
-          researcher
+          teacher
         </a>{" "}
-        at the University of Duisburg-Essen at the chair of Computer Science
-        Education and{" "}
+        for Mathematics and Computer Science Education and
         <a rel="noreferrer" href="https://openpatch.org">
           head
         </a>{" "}

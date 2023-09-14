@@ -1,8 +1,0 @@
-pin: true
-name: Processing Scratch
-description: A processing library to ease the transition from scratch to processing
-link: https://github.com/mikebarkmin/processing-library-scratch
-weight: 9
-tags:
-  - processing
-  - java
