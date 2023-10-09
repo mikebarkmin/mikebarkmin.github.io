@@ -16,9 +16,7 @@ const Contact = () => (
       <ContactText>
         Send me an <a href="mailto:mike@barkmin.eu">E-Mail</a> or say Hi to me
         on{' '}
-        <a rel="noreferrer" href="https://twitter.com/mikebarkmin">
-          Twitter
-        </a>
+        <a rel="me" href="https://bildung.social/@mikebarkmin">Mastodon</a>
       </ContactText>
     </Inner>
   </Content>
