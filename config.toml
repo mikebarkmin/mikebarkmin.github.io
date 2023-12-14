@@ -34,5 +34,5 @@ theme = "paper"
   weight = 50
 
 [params]
-  github = "mikebarkmin"
-  mastodon = "mikebarkmin@bildung.social"
+  github = "https://github.com/mikebarkmin"
+  mastodon = "https://bildung.social/@mikebarkmin"
