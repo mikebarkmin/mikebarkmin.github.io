@@ -15,7 +15,7 @@ In the last years a few projects tried to make this dream come true. [Sencha Tou
 
 The last universal app, which I have developed was actually my first one. I developed [SoccerSketch](https://play.google.com/store/apps/details?id=air.com.mikescho.soccersketch) in 2010 with Adobe Flash CS4. It was easy to develop and could be deployed on Windows, Linux, Mac, iOS, Android and BlackBerry, which was huge to me as a newcomer in the development world, who did not know much about developing. But there was a big issue or a big benefit, it depends on how you look at it, on each platform my app looked the same and the performance varied heavy on each platform. This could also be my bad coding back then, but who knows ;) — “burns old hard drive”.
 
-![Screenshot of SoccerSketch running on Android Honeycomb](https://cdn-images-1.medium.com/max/2560/0*QuOmJznAJvBR0gQt.)*Screenshot of SoccerSketch running on Android Honeycomb*
+![Screenshot of SoccerSketch running on Android Honeycomb](soccersketch.jpg)*Screenshot of SoccerSketch running on Android Honeycomb*
 
 Now fast-forward 7 years and a few programming courses, books and projects later. I had picked up once again on this idea to write once and run everywhere. So I started a proof of concept project, which is not quite write once run everywhere, but it is close.
 
@@ -25,13 +25,13 @@ My project [react-to-everything](https://raw.githubusercontent.com/mikebarkmin/r
 
 At first take a look at the screenshot down below. On the right-hand-side you can see a screenshot of the project running in the browser, which is also the same view you would get when running it on a desktop. On the left-hand-side you can see it running on an android device ([bottom tabs are a thing now in material design](https://material.io/guidelines/components/bottom-navigation.html#)). Unfortunately I can not present you an iOS screenshot, because I do not own an apple device, but believe me it would look like an iOS app.
 
-![Left: Android, Right: Web](https://cdn-images-1.medium.com/max/2000/1*ABk0YoSlPemYYJme9alM3g.png)*Left: Android, Right: Web*
+![Left: Android, Right: Web](android-pc.png)*Left: Android, Right: Web*
 
 ### The key is to react
 
 The ui components are developed with react and react-native. But I relay heavily on inheritance to share as much code as possible.
 
-![Diagram of the connection between the files. The arrow defines the direction in which the code is pumped.](https://cdn-images-1.medium.com/max/2000/1*zvD2ROc4HqkFvZHQvBvi9Q.png)*Diagram of the connection between the files. The arrow defines the direction in which the code is pumped.*
+![Diagram of the connection between the files. The arrow defines the direction in which the code is pumped.](diagram.png)*Diagram of the connection between the files. The arrow defines the direction in which the code is pumped.*
 
 So every component which I have used in this project consists of five files. At first this sound like chaos, but let me explain. We have three base classes. One for Android (*.android.js), one for iOS (*.ios.js) and one for the Web/Desktop (*.js). These files contain platform specific code, but Android and iOS relay on the class NativeBase (*.native.js), which could be used to only write code for mobile, but not for the Web/Desktop.
 
@@ -39,12 +39,12 @@ For the Header component which you can see in the screenshot following code is u
 
 HeaderBase.native.js
 
-```javascript
+```react
     import React from 'react';
     import { Header, Title, Body } from 'native-base';
-    
+
     import I18n from '../../locales/I18n';
-    
+
     export default class NativeBase extends React.Component {
       render() {
         return (
@@ -62,14 +62,14 @@ HeaderBase.native.js
 
 HeaderBase.js
 
-```javascript
+```react
     import React from 'react';
     import AppBar from 'material-ui/AppBar';
     import { connect } from 'react-redux';
-    
+
     import I18n from '../../locales/I18n';
     import { toggleDrawer } from '../../actions/navigationActions';
-    
+
     @connect()
     export default class Base extends React.Component {
       constructor(props) {
@@ -98,12 +98,12 @@ To abstract the data flow of the app I have found that [redux](http://redux.js.o
 
 SettingsBase.native.js
 
-```javascript
+```react
     import React from 'react';
     import { Content, Text, ListItem, Left, Right, Switch } from 'native-base';
-    
+
     import I18n from '../../locales/I18n';
-    
+
     export default class NativeBase extends React.Component {
       render() {
         return (
@@ -134,13 +134,13 @@ SettingsBase.native.js
 
 SettingsBase.js
 
-```javascript
+```react
     import React from 'react';
     import { List, ListItem } from 'material-ui/List';
     import Toggle from 'material-ui/Toggle';
-    
+
     import I18n from '../../locales/I18n';
-    
+
     export default class Base extends React.Component {
       render() {
         return (
@@ -175,12 +175,12 @@ As you can see, both classes using the methods onSettings1Change and onSettings2
 
 Settings.js
 
-```javascript
+```react
     import { connect } from 'react-redux';
     import Base from './SettingsBase';
-    
+
     import { setSettings1, setSettings2 } from '../../actions/settingsActions';
-    
+
     export class Settings extends Base {
       constructor(props) {
         super(props);
@@ -194,13 +194,13 @@ Settings.js
         this.props.dispatch(setSettings2(value));
       }
     }
-    
+
     function mapStateToProps(state) {
       return {
         settings: state.settings,
       };
     }
-    
+
     export default connect(mapStateToProps)(Settings);
 ```
 
@@ -218,16 +218,16 @@ I18n.js
     import I18n from 'i18n-js';
     import de from './locales/de';
     import en from './locales/en';
-    
+
     I18n.fallbacks = true;
-    
+
     I18n.translations = {
       en,
       de,
     };
-    
+
     I18n.locale = navigator.language || navigator.userLanguage;
-    
+
     export default I18n;
 ```
 
@@ -237,14 +237,14 @@ I18n.native.js
     import I18n from 'react-native-i18n';
     import de from './locales/de';
     import en from './locales/en';
-    
+
     I18n.fallbacks = true;
-    
+
     I18n.translations = {
       en,
       de,
     };
-    
+
     export default I18n;
 ```
 
@@ -252,7 +252,7 @@ I18n.android.js and I18n.ios.js
 
 ```javascript
     import I18n from './I18n.native';
-    
+
     export default I18n;
 ```
 

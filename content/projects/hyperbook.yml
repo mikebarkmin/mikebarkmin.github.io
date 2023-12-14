@@ -1,8 +1,0 @@
-pin: true
-name: Hyperbook
-description: Hyperbook is a static site generator (SSG) for building interactive workbooks.
-link: https://hyperbook.openpatch.org
-weight: 10
-tags:
-  - reactjs
-  - nextjs
