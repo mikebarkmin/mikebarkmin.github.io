@@ -1,0 +1,83 @@
+{{ define "main" }}
+
+<!-- Tag Title -->
+{{ if and .Title (eq .Type "tags") }}
+<h1 class="mb-16">#{{ .Title }}</h1>
+{{ end }} {{ with .Title }}
+<h1 class="mb-16">{{ . }}</h1>
+{{ end }}
+
+<!-- $pages -->
+{{ $pages := union (.RegularPages.ByParam "year").Reverse .Sections }}<!---->
+{{ if .IsHome }}<!---->
+{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
+{{ end }}
+
+<!-- Articles -->
+{{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages
+}}<!---->
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  {{ if gt .Weight 0 }}
+  <span
+    class="mb-2 ml-px inline-block text-[0.8rem] font-medium uppercase tracking-wider text-[#ff3b2d] opacity-70"
+    >Featured</span
+  >
+  {{ end }}
+  <h2 class="!my-0 pb-1 font-bold !leading-none">{{ .Title }}</h2>
+  <span class="text-sm antialiased opacity-60"
+  >{{ .Params.year }} {{ if .Params.series }}- {{ .Params.series }}{{ end }} {{ if .Params.location }}- {{ .Params.location }}{{ end }}</span
+  >
+  <div class="absolute text-[0]">{{ .Title }}</div>
+
+  <div class="mt-3 flex flex-wrap">
+    <span
+      class="mb-1.5 no-underline dark:bg-white/[8%]"
+    >
+      {{ delimit .Params.authors "; "}}
+      {{ if .Params.year }}
+        {{ .Params.year }}
+      {{ end }}:
+      {{ if .Params.editors }}
+        In: {{ delimit .Params.editors "; "}} (ed.)
+      {{ end }}
+      {{ if .Params.booktitle }}
+       {{ .Params.booktitle }}.
+      {{ end }}
+      {{ if .Params.address }}
+       {{ .Params.address }}:
+      {{ end }}
+      {{ if .Params.publisher }}
+       {{ .Params.publisher }}
+      {{ end }}
+    </span>
+  </div>
+  <div>
+    {{ if .Params.paper }}
+    <a href="{{ .Params.paper }}" target="_blank">Paper</a>
+    {{ end }}
+    {{ if .Params.presentation }}
+    <a href="{{ .Params.presentation }}" target="_blank">Präsentation</a>
+    {{ end }}
+    {{ if .Params.video }}
+    <a href="{{ .Params.video }}" target="_blank">Video</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<!-- Main Nav -->
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="mt-16 flex">
+  {{ if $paginator.HasPrev }}
+  <a class="btn" href="{{ $paginator.Prev.URL }}">← {{ i18n "prev_page" }}</a>
+  {{ end }}<!---->
+  {{ if $paginator.HasNext }}
+  <a class="btn ml-auto" href="{{ $paginator.Next.URL }}"
+    >{{ i18n "next_page" }} →</a
+  >
+  {{ end }}
+</nav>
+{{ end }}<!---->
+
+{{ end }}

@@ -1,0 +1,38 @@
+baseURL = 'http://barkmin.eu/'
+languageCode = 'de-DE'
+title = 'Mike Barkmin'
+theme = "paper"
+[menus]
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Blog"
+  pageRef = "/blog"
+  weight = 20
+
+[[menus.main]]
+  name = "Projekte"
+  pageRef = "/projects"
+  weight = 21
+
+[[menus.main]]
+  name = "Materialen"
+  pageRef = "/materials"
+  weight = 30
+
+[[menus.main]]
+  name = "Vorträge"
+  pageRef = "/talks"
+  weight = 40
+
+[[menus.main]]
+  name = "Veröffentlichungen"
+  pageRef = "/publications"
+  weight = 50
+
+[params]
+  github = "mikebarkmin"
+  mastodon = "mikebarkmin@bildung.social"

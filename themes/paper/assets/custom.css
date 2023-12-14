@@ -1,0 +1,15 @@
+/* Place custom css here. */
+
+.homepage-header {
+  text-align: center;
+}
+
+.homepage-header > img {
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.homepage-content {
+  text-align: center;
+}

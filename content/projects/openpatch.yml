@@ -1,7 +1,0 @@
-pin: true
-name: OpenPatch
-description: OpenPatch is an organisation for improving assessment and training of programming competencies.
-link: https://openpatch.org
-weight: 11
-tags:
-  - organisation
