@@ -1,1 +1,1 @@
-<embed src= "{{ .Get 0 }}" width= "100%" height= "1000px" type="application/pdf" >
+<embed src= "{{ .Get 0 }}" width= "100%" height= "100%" style="aspect-ratio: {{ if eq (.Get 1) "landscape" }} 1.1414/1 {{ else }} 1/1.1414 {{ end }}" type="application/pdf" >
