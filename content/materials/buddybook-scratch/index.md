@@ -11,5 +11,6 @@ Scratch. Für die wichtigsten Konzepte gibt es eine eigene Seite.
 
 - Lizenz: [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 - [Download](buddybook-scratch.pdf)
+- [Bearbeiten auf Overleaf](https://www.overleaf.com/read/rchqjwbwhgzx#bcef06)
 
 {{< pdfreader "buddybook-scratch.pdf" "landscape" >}}
