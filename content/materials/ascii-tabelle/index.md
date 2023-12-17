@@ -8,6 +8,6 @@ lang: de
 
 - Lizenz: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - [Download](ascii-tabelle.pdf)
-- [Overleaf](https://www.overleaf.com/read/dcbvxytmsypw#1bdf37)
+- [Bearbeiten auf Overleaf](https://www.overleaf.com/read/dcbvxytmsypw#1bdf37)
 
 {{< pdfreader "ascii-tabelle.pdf" "landscape" >}}

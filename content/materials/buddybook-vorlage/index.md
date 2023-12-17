@@ -10,5 +10,6 @@ Das ist eine Vorlage für ein Buddybook, welches die Schüler:innen eigenständi
 
 - Lizenz: [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 - [Download](buddybook.pdf)
+- [Bearbeiten auf Overleaf](https://www.overleaf.com/read/vmwqwtgfmgsk#b8e8df)
 
 {{< pdfreader "buddybook.pdf" "landscape" >}}
