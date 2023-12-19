@@ -1,8 +1,5 @@
 ---
 title: JArmEmu
-tags:
-    - informatik
-    - assembler
 link: "https://flathub.org/apps/fr.dwightstudio.JArmEmu"
 lang: de
 ---
