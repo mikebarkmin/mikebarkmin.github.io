@@ -2,10 +2,13 @@
 
 <!-- Tag Title -->
 {{ if and .Title (eq .Type "tags") }}
-<h1 class="mb-16">#{{ .Title }}</h1>
+<h1 class="mb-3">#{{ .Title }}</h1>
 {{ end }} {{ with .Title }}
-<h1 class="mb-16">{{ . }}</h1>
+<h1 class="mb-3">{{ . }}</h1>
 {{ end }}
+
+{{ .Content }}
+
 
 <!-- $pages -->
 {{ $pages := union (.RegularPages.ByParam "year").Reverse .Sections }}<!---->
@@ -24,23 +27,16 @@
     >Featured</span
   >
   {{ end }}
-  <h2 class="!my-0 pb-1 font-bold !leading-none">{{ .Title }}</h2>
+  {{ if .IsSection }}
+  <h2 class="!my-0 pb-1 font-bold !leading-none"><a href="{{ .Permalink }}">{{ .Title }} ({{ len .RegularPagesRecursive }})</a></h2>
+  {{ else }}
+  <h2 class="!my-0 pb-1 font-bold !leading-none"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  {{ end }}
   <div class="mt-3">
   {{ .Summary }}
   </div>
   {{ if .Params.link }}
   <a href="{{ .Params.link }}">{{ .Params.link }}</a>
-  {{ end }}
-  {{ if .Params.tags }}
-  <div class="mt-3 flex flex-wrap">
-    {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="{{ $href }}"
-      >{{ . }}</a
-    >
-    {{ end }}
-  </div>
   {{ end }}
 </section>
 {{ end }}

@@ -1,8 +1,5 @@
 ---
 title: MiMaSimu
-tags:
-    - informatik
-    - assembler
 link: https://github.com/Indidev/MiMaSimu
 lang: de
 ---

@@ -1,8 +1,5 @@
 ---
 title: Turing Machine Visualization
-tags:
-    - informatik
-    - turingmaschine
 link: http://turingmachine.io/
 lang: de
 ---

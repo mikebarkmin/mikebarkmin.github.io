@@ -1,8 +1,5 @@
 ---
 title: Mops
-tags:
-    - informatik
-    - assembler
 link: http://www.viktorianer.de/info/mops.html
 lang: de
 ---
