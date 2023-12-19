@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+<p>
+{{ partial "breadcrumbs.html" . }}
+</p>
+
 <!-- Tag Title -->
 {{ if and .Title (eq .Type "tags") }}
 <h1 class="mb-3">#{{ .Title }}</h1>
