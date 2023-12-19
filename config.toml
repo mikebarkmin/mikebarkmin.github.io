@@ -24,6 +24,11 @@ theme = "paper"
   weight = 30
 
 [[menus.main]]
+  name = "Tools"
+  pageRef = "/tools"
+  weight = 30
+
+[[menus.main]]
   name = "Vorträge"
   pageRef = "/talks"
   weight = 40
@@ -36,3 +41,5 @@ theme = "paper"
 [params]
   github = "mikebarkmin"
   mastodon = "https://bildung.social/@mikebarkmin"
+  name = "Mike Barkmin"
+  avatar = "mike.jpg"
