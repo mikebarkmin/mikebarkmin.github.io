@@ -45,6 +45,8 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Check for broken Links
+        uses: marojor/hugo-broken-link-checker@v1.0.5
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
