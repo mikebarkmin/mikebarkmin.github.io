@@ -2,6 +2,7 @@ baseURL = 'http://barkmin.eu/'
 languageCode = 'de-DE'
 title = 'Mike Barkmin'
 theme = "paper"
+
 [menus]
 [[menus.main]]
   name = "Home"
