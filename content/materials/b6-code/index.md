@@ -7,7 +7,7 @@ tags:
 lang: de
 ---
 
-Die Materialien zum B6-Code führen Schüler:innen langsam an die Funktionsweise von QR-Codes heran. Die Schüler:innen sollten für die Bearbeitung schon mit der Binärcodierung von Texten und Bildern vertraut sein. Dazu eignen sich die Kapitel [Pixelgrafik](https://inf-schule.de/kids/datennetze/pixelgrafik) und [Binärdarstellung von Text](https://inf-schule.de/kids/datennetze/text) von der Webseite [inf-schule.de](inf-schule.de).
+Die Materialien zum B6-Code führen Schüler:innen langsam an die Funktionsweise von QR-Codes heran. Die Schüler:innen sollten für die Bearbeitung schon mit der Binärcodierung von Texten und Bildern vertraut sein. Dazu eignen sich die Kapitel [Pixelgrafik](https://inf-schule.de/kids/datennetze/pixelgrafik) und [Binärdarstellung von Text](https://inf-schule.de/kids/datennetze/text) von der Webseite [inf-schule.de](https://inf-schule.de).
 
 - Zeitaufwand: ca. 90 min
 - Lizenz: [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
