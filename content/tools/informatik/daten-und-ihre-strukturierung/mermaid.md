@@ -1,6 +1,6 @@
 ---
 title: Mermaid
-link: mermaid.live
+link: https://mermaid.live
 lang: de
 ---
 
