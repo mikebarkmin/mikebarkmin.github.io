@@ -1,0 +1,23 @@
+name: Hugo broken link check
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  schedule:
+      - '0 0 * * *'
+
+jobs:
+  broken-link-check:
+    runs-on: ubuntu-latest
+    name: Check for broken links
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+    - name: Check for broken Links
+      uses: marojor/hugo-broken-link-checker@v1.0.5
