@@ -5,8 +5,7 @@ for latex_dir in **/latex/; do
     parent_dir=$(dirname $latex_dir)
     project_name=$(basename $parent_dir)
 
-    git archive --format zip HEAD:$latex_dir "${project_name}.zip" > $parent_dir/latex.zip
-
-    echo $project_name
-    echo $latex_dir
+    pushd $latex_dir
+    git archive --worktree-attributes --format=zip main . -o "../${project_name}-src.zip"
+    popd
 done
