@@ -23,6 +23,14 @@
     {{ end }}
   </header>
 
+  {{ if .Params.latex }}
+    {{ $zip := print .File.ContentBaseName "-src.zip"}}
+    {{ with .Resources.GetMatch $zip }}
+    <a class="btn-overleaf" target="_blank" href="https://www.overleaf.com/docs?engine=lualatex&snip_uri={{ .Permalink | htmlEscape }}">Öffnen in Overleaf</a>
+    <a class="btn-latex" target="_blank" href="{{ .Permalink }}">Download LaTeX</a>
+    {{ end }}
+  {{ end }}
+
   <section>{{ .Content }}</section>
 
   {{ with .Params.link }}

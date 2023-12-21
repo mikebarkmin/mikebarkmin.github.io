@@ -5,6 +5,7 @@ tags:
     - informatik-6
     - codierung-von-daten
 lang: de
+latex: true
 ---
 
 Die Materialien zum B6-Code führen Schüler:innen langsam an die Funktionsweise von QR-Codes heran. 
@@ -13,12 +14,11 @@ Die Schüler:innen sollten für die Bearbeitung schon mit der Binärcodierung vo
 
 - Zeitaufwand: ca. 90 min
 - Lizenz: [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
-- [Präsentation](praesentation.pdf)
-- [Arbeitsblätter](arbeitsblaetter.pdf)
+- [Präsentation](latex/praesentation.pdf)
+- [Arbeitsblätter](latex/arbeitsblaetter.pdf)
 - [Lösungen](loesungen.pdf)
 - [Vorlagen](b6code_vorlagen.pdf)
 - [ASCII-Tabelle](../ascii-tabelle)
-- [Bearbeiten auf Overleaf](https://www.overleaf.com/read/qjkntyjdxrpp#203597)
 
 ## Präsentation
 
