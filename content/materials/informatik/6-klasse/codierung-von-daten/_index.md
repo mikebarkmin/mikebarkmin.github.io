@@ -1,0 +1,3 @@
+---
+title: "Codierung von Daten"
+---

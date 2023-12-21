@@ -1,0 +1,61 @@
+% LTeX: language=de-DE
+\documentclass[a4paper, landscape]{scrartcl}
+
+\usepackage[
+	typ=ab,
+	fach=Informatik,
+	lerngruppe=,
+	zitate=quotes,
+	lizenz=cc-by-sa-4,
+	farbig,
+	module={Symbole,Lizenzen}
+]{schule}
+
+\ifoot{v2023-12-17}
+\cfoot{}
+\ofoot{\lizenzSymbol}
+
+\usepackage{tabularx}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=1cm,includehead,includefoot]{geometry}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+
+\title{ASCII-Tabelle}
+\author{Mike Barkmin}
+\date{Datum: \hspace{1.5cm}}
+
+
+
+\begin{document}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{|YY|Y|YY|Y|YY|Y|YY|}
+	Binär              & Zeichen           &  & Binär              & Zeichen &  & Binär              & Zeichen        &  & Binär               & Zeichen  \\
+	\texttt{0010 0000} & \textvisiblespace &  & \texttt{0011 1001} & 9       &  & \texttt{0101 0010} & R              &  & \texttt{0110 1011} & k        \\
+	\texttt{0010 0001} & !                 &  & \texttt{0011 1010} & :       &  & \texttt{0101 0011} & S              &  & \texttt{0110 1100} & l        \\
+	\texttt{0010 0010} & "                 &  & \texttt{0011 1011} & ;       &  & \texttt{0101 0100} & T              &  & \texttt{0110 1101} & m        \\
+	\texttt{0010 0011} & \#                &  & \texttt{0011 1100} & <       &  & \texttt{0101 0101} & U              &  & \texttt{0110 1110} & n        \\
+	\texttt{0010 0100} & \$                &  & \texttt{0011 1101} & =       &  & \texttt{0101 0110} & V              &  & \texttt{0110 1111} & o        \\
+	\texttt{0010 0101} & \%                &  & \texttt{0011 1110} & >       &  & \texttt{0101 0111} & W              &  & \texttt{0111 0000} & p        \\
+	\texttt{0010 0110} & \&                &  & \texttt{0011 1111} & ?       &  & \texttt{0101 1000} & X              &  & \texttt{0111 0001} & q        \\
+	\texttt{0010 0111} & \textquotesingle  &  & \texttt{0100 0000} & @       &  & \texttt{0101 1001} & Y              &  & \texttt{0111 0010} & r        \\
+	\texttt{0010 1000} & (                 &  & \texttt{0100 0001} & A       &  & \texttt{0101 1010} & Z              &  & \texttt{0111 0011} & s        \\
+	\texttt{0010 1001} & )                 &  & \texttt{0100 0010} & B       &  & \texttt{0101 1011} & [              &  & \texttt{0111 0100} & t        \\
+	\texttt{0010 1010} & *                 &  & \texttt{0100 0011} & C       &  & \texttt{0101 1100} & \char`\\       &  & \texttt{0111 0101} & u        \\
+	\texttt{0010 1011} & +                 &  & \texttt{0100 0100} & D       &  & \texttt{0101 1101} & ]              &  & \texttt{0111 0110} & v        \\
+	\texttt{0010 1100} & \textquoteright   &  & \texttt{0100 0101} & E       &  & \texttt{0101 1110} & \^{}           &  & \texttt{0111 0111} & w        \\
+	\texttt{0010 1101} & -                 &  & \texttt{0100 0110} & F       &  & \texttt{0101 1111} & \char`\_       &  & \texttt{0111 1000} & x        \\
+	\texttt{0010 1110} & .                 &  & \texttt{0100 0111} & G       &  & \texttt{0110 0000} & \textquoteleft &  & \texttt{0111 1001} & y        \\
+	\texttt{0010 1111} & /                 &  & \texttt{0100 1000} & H       &  & \texttt{0110 0001} & a              &  & \texttt{0111 1010} & z        \\
+	\texttt{0011 0000} & 0                 &  & \texttt{0100 1001} & I       &  & \texttt{0110 0010} & b              &  & \texttt{0111 1011} & \char`\{ \\
+	\texttt{0011 0001} & 1                 &  & \texttt{0100 1010} & J       &  & \texttt{0110 0011} & c              &  & \texttt{0111 1100} & |        \\
+	\texttt{0011 0010} & 2                 &  & \texttt{0100 1011} & K       &  & \texttt{0110 0100} & d              &  & \texttt{0111 1101} & \char`\} \\
+	\texttt{0011 0011} & 3                 &  & \texttt{0100 1100} & L       &  & \texttt{0110 0101} & e              &  & \texttt{0111 1110} & \~{}     \\
+	\texttt{0011 0101} & 4                 &  & \texttt{0100 1101} & M       &  & \texttt{0110 0110} & f              &  &                     &         \\
+	\texttt{0011 0100} & 5                 &  & \texttt{0100 1110} & N       &  & \texttt{0110 0111} & g              &  &                     &      \\
+	\texttt{0011 0110} & 6                 &  & \texttt{0100 1111} & O       &  & \texttt{0110 1000} & h              &  &                     &          \\
+	\texttt{0011 0111} & 7                 &  & \texttt{0101 0000} & P       &  & \texttt{0110 1001} & i              &  &                     &          \\
+	\texttt{0011 1000} & 8                 &  & \texttt{0101 0001} & Q       &  & \texttt{0110 1010} & j              &  &                     &          \\
+\end{tabularx}
+
+\end{document}

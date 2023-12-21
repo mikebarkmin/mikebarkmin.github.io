@@ -1,0 +1,3 @@
+{{ with .Page.Resources.GetMatch "latex.zip" }}
+<a class="btn-overleaf" href="https://www.overleaf.com/docs?snip_uri={{ .Permalink | htmlEscape }}">Öffnen in Overleaf</a>
+{{ end }}
