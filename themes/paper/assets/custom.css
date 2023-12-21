@@ -29,3 +29,19 @@ a.btn-overleaf {
 a.btn-overleaf:hover {
   background-color: #246b1e;
 }
+
+a.btn-latex {
+  background-color: rgb(206, 206, 206);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: black;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+a.btn-latex:hover {
+  background-color: #acacac;
+}
