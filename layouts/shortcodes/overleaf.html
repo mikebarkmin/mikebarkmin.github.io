@@ -1,3 +1,4 @@
-{{ with .Page.Resources.GetMatch "latex.zip" }}
+{{ $zip := print .Page.File.ContentBaseName "-src.zip"}}
+{{ with .Page.Resources.GetMatch $zip }}
 <a class="btn-overleaf" href="https://www.overleaf.com/docs?snip_uri={{ .Permalink | htmlEscape }}">Öffnen in Overleaf</a>
 {{ end }}

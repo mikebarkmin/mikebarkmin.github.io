@@ -1,1 +1,1 @@
-latex/*.pdf export-ignore
+/**/latex/*.pdf export-ignore
