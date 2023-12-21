@@ -4,9 +4,9 @@ title: "ASCII Tabelle"
 tags:
   - informatik-6
 lang: de
+latex: true
 ---
 <!--more-->
-{{< overleaf >}}
 - Lizenz: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - [Download](latex/ascii-tabelle.pdf)
 
