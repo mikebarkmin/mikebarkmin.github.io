@@ -13,3 +13,19 @@
 .homepage-content {
   text-align: center;
 }
+
+a.btn-overleaf {
+  background-color: rgb(19, 138, 7);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+a.btn-overleaf:hover {
+  background-color: #246b1e;
+}
