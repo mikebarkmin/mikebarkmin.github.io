@@ -17,7 +17,7 @@ Die Schüler:innen sollten für die Bearbeitung schon mit der Binärcodierung vo
 - [Präsentation](latex/praesentation.pdf)
 - [Arbeitsblätter](latex/arbeitsblaetter.pdf)
 - [Lösungen](loesungen.pdf)
-- [Vorlagen](b6code_vorlagen.pdf)
+- [Vorlagen](latex/b6code_vorlagen.pdf)
 - [ASCII-Tabelle](../ascii-tabelle)
 
 ## Präsentation
