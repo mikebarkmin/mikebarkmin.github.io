@@ -22,11 +22,11 @@ Die Schüler:innen sollten für die Bearbeitung schon mit der Binärcodierung vo
 
 ## Präsentation
 
-{{< pdfreader "praesentation.pdf" >}}
+{{< pdfreader "latex/praesentation.pdf" >}}
 
 ## Arbeitsblätter
 
-{{< pdfreader "arbeitsblaetter.pdf" "landscape" >}}
+{{< pdfreader "latex/arbeitsblaetter.pdf" "landscape" >}}
 
 ## Lösungen
 
@@ -34,4 +34,4 @@ Die Schüler:innen sollten für die Bearbeitung schon mit der Binärcodierung vo
 
 ## Vorlagen
 
-{{< pdfreader "b6code_vorlagen.pdf" >}}
+{{< pdfreader "latex/b6code_vorlagen.pdf" >}}
