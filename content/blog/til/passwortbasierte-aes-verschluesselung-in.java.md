@@ -3,7 +3,7 @@ title: Passwortbasierte AES-Verschlüsselung in Java
 tags:
     - til
 lang: de
-date: 2023-12-22
+date: 2024-01-07
 ---
 
 Hier ein Weg wie man die AES-Verschlüsselung mit Javas hauseigenen Klassen umsetzten kann. Zur Verschlüsselung wird ein IvParameterSpec und ein Salt benötigt. Da diese beim ver- und entschlüsseln identisch sein müssen, müssen diese in Programm gespeichert oder direkt im verschlüsselten Text gespeichert werden.
