@@ -37,8 +37,10 @@ public class Cipher {
     }
 
     public static String encrypt(String plainText, String password)
-            throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException,
-            InvalidKeyException, BadPaddingException, IllegalBlockSizeException, InvalidKeySpecException, UnsupportedEncodingException {
+            throws NoSuchPaddingException, NoSuchAlgorithmException,
+                   InvalidAlgorithmParameterException, InvalidKeyException,
+                   BadPaddingException, IllegalBlockSizeException,
+                   InvalidKeySpecException, UnsupportedEncodingException {
         SecureRandom secureRandom = new SecureRandom();
 
         byte[] iv = new byte[16];
@@ -62,8 +64,11 @@ public class Cipher {
     }
 
     public static String decrypt(String encryptedText, String password)
-            throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException,
-            InvalidKeyException, BadPaddingException, IllegalBlockSizeException, InvalidKeySpecException, UnsupportedEncodingException {
+            throws NoSuchPaddingException, NoSuchAlgorithmException,
+                   InvalidAlgorithmParameterException,
+                   InvalidKeyException, BadPaddingException,
+                   IllegalBlockSizeException, InvalidKeySpecException,
+                   UnsupportedEncodingException {
         byte[] encryptedData = Base64.getDecoder().decode(encryptedText);
 
         byte[] iv = new byte[16];
@@ -84,7 +89,11 @@ public class Cipher {
         return new String(decryptedText, "UTF-8");
     }
 
-    public static void main(String[] args) throws InvalidAlgorithmParameterException, NoSuchPaddingException, IllegalBlockSizeException, UnsupportedEncodingException, NoSuchAlgorithmException, BadPaddingException, InvalidKeySpecException, InvalidKeyException {
+    public static void main(String[] args)
+            throws InvalidAlgorithmParameterException, NoSuchPaddingException,
+                   IllegalBlockSizeException, UnsupportedEncodingException,
+                   NoSuchAlgorithmException, BadPaddingException,
+                   InvalidKeySpecException, InvalidKeyException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Schlüssel:");
         String password = scanner.nextLine().trim();
