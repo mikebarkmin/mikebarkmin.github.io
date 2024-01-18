@@ -3,6 +3,7 @@ title: MRBS mit Webunits verknüpfen
 tags:
     - til
 lang: de
+date: 2024-01-18
 ---
 
 [MRBS](https://github.com/meeting-room-booking-system/mrbs-code) ist ein Raumbuchungssystem. Dieses System bietet mehr Möglichkeiten Räume bzw. Gruppen zu verwalten, als die hauseigenen Mittel von WebUnits. 
