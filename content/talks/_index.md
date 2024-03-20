@@ -1,3 +1,3 @@
 ---
-title: Vorträge
+title: Workshops/Vorträge
 ---
