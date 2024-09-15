@@ -7,7 +7,7 @@ lang: de
 latex: true
 ---
 <!--more-->
-- Lizenz: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Lizenz: [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
 - [Download](latex/ascii-tabelle.pdf)
 
 {{< pdfreader "latex/ascii-tabelle.pdf" "landscape" >}}

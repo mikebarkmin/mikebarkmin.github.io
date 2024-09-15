@@ -3,6 +3,11 @@ languageCode = 'de-DE'
 title = 'Mike Barkmin'
 theme = "paper"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menus]
 [[menus.main]]
   name = "Home"
