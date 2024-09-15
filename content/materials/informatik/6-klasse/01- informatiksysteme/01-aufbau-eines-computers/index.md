@@ -33,7 +33,7 @@ Sicherung: Mainboard | - L sammelt Vorschläge wo sich das Mainboard befindet.<b
 | Sicherung: Lüfter | - L lässt von S:S Satz zur Beschreibung des Lüfter formulieren. Z.B.: Die Lüfter kühlen den Computer. | Computer, Arbeitsblatt | |
 | Abschluss: Zusammenbauen | - S:S bauen die Computer wieder zusammen. | Computer | Hier muss zum Teil viel geholfen werden, da S:S oft auch weitere Kabel entfernen und dann nicht mehr wissen wo diese hinkommen. Wenn ihr Glück habt, dann sind die Kabel farbcodiert. |
 
-Zur Überprüfung habe ich noch ein Kahoot erstellt. Ich würde es hier für die nächste Stunde ankündigen. Falls eure S:S doch schnell mit dem Zusammenbauen sind, dann könnt ihr es natürlich auch noch jetzt spielen.
+Zur Überprüfung habe ich noch ein Kahoot erstellt. Ich würde es hier für die nächste Stunde ankündigen. Falls eure S:S doch schnell mit dem Zusammenbauen sind, könnt ihr es natürlich auch noch jetzt spielen.
 
 ## Materialien
 
