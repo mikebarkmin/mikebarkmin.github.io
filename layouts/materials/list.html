@@ -15,7 +15,7 @@
 
 
 <!-- $pages -->
-{{ $pages := union (.RegularPages.ByParam "year").Reverse .Sections }}<!---->
+{{ $pages := union (.RegularPages.ByParam "title") .Sections }}<!---->
 {{ if .IsHome }}<!---->
 {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
 {{ end }}
