@@ -1,0 +1,96 @@
+% LTeX: language=de-DE
+\documentclass{beamer}
+\usepackage[utf8]{luainputenc}
+\usepackage[
+	typ=ohne,
+	fach=Informatik,
+	zitate=quotes,
+	lerngruppe=6,
+	lizenz=cc-by-sa-4,
+	farbig,
+	module={Symbole, Lizenzen, Papiertypen}
+]{schule}
+\usetheme{metropolis}
+\usepackage{qrcode}
+\usepackage{emoji}
+
+\usepackage{adjustbox}
+% Fancy fit image command with optional caption
+\makeatletter
+\newcommand{\fitimage}[2][\@nil]{
+  \begin{figure}
+    \begin{adjustbox}{width=0.9\textwidth, totalheight=\textheight-2\baselineskip-2\baselineskip,keepaspectratio}
+      \includegraphics{#2}
+    \end{adjustbox}
+    \def\tmp{#1}%
+   \ifx\tmp\@nnil
+      \else
+      \caption{#1}
+    \fi
+  \end{figure}
+}
+\makeatother
+
+\setbeamertemplate{frame footer}{v1.0.0 \hfill \lizenzSymbol}
+
+\title{Speichermedien}
+\subtitle{}
+\date{}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+  \frametitle{Wo werden meine Dateien gespeichert?}
+  \fitimage{./foto_machen.excalidraw.png}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Fahrplan}
+  \begin{itemize}
+    \item Wo werden meine Dateien gespeichert?
+    \item Welche Speichermedien kennt ihr?
+    \item Gruppenarbeit: Speichermedien untersuchen und präsentieren
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Welche Speichermedien kennt ihr?}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Speichermedien}
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+      \begin{itemize}
+        \item \emoji{green-circle} SD-Karte
+        \item \emoji{green-circle} USB-Stick
+        \item \emoji{orange-circle} DVD
+        \item \emoji{orange-circle} HDD
+        \item \emoji{orange-circle} SSD
+        \item \emoji{red-square} Cloud
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.7\textwidth}
+      \begin{itemize}
+        \item Erstellt eine Präsentation mit diesem Inhalt:
+              \begin{itemize}
+                \item Was ist das Speichermdium? (Name, Fotos)
+                \item Wie funktioniert das Speichermedium?
+                \item Wie kann ich es benutzen?
+                \item Wie viel kann ich speichern?
+                \item "Kaufe" dir das Speichermedium? Wie viel kostest es? Wie viel Speicherplatz bekommst du? (Mache Screenshots von Preisbeispielen)
+              \end{itemize}
+        \item Lest euch dazu den passenden Text durch und nutzt das Internet.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[standout]
+  Präsentationen der Speichermedien
+\end{frame}
+
+\end{document}
