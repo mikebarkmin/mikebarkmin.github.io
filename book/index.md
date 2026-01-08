@@ -15,18 +15,18 @@ P.S.: Die Seite wurde mit meinem Projekt [Hyperbook](https://hyperbook.openpatch
 
 :::tiles
 
-::tile{title="Blog" href="/blog" icon="/icons/speech-bubble.svg"}
+::tile{title="Blog" href="/blog" icon=":speech_balloon:"}
 
-::tile{title="Publikationen" href="/publikationen" icon="/icons/books.svg"}
+::tile{title="Publikationen" href="/publikationen" icon=":books:"}
 
-::tile{title="Projekte" href="/projekte" icon="/icons/rocket.svg"}
+::tile{title="Projekte" href="/projekte" icon=":rocket:"}
 
-::tile{title="Material" href="/material" icon="/icons/folder.svg"}
+::tile{title="Material" href="/material" icon=":open_file_folder:"}
 
-::tile{title="TIL" href="/til" icon="/icons/til.svg"}
+::tile{title="TIL" href="/til" icon=":bulb:"}
 
-::tile{title="Tools" href="/tools" icon="/icons/wrench.svg"}
+::tile{title="Tools" href="/tools" icon=":wrench:"}
 
-::tile{title="Vorträge" href="/vortraege" icon="/icons/mic.svg"}
+::tile{title="Vorträge" href="/vortraege" icon=":microphone:"}
 
 :::
