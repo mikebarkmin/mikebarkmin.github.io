@@ -30,6 +30,8 @@ Während der Reihe entstand für die Schüler:innen laufend ein Arbeitsheft zum 
 Das Arbeitsheft kann im SVG Format mit der Software [Inkscape](https://inkscape.org/de/) bearbeitet werden. Damit es nicht zu Darstellungsfehlern kommt, werden für die Bearbeitung die Schriftarten [Josefin Sans](https://font.download/font/josefin-sans) und [Virgil 3](https://virgil.excalidraw.com/) benötigt.
 Zusätzlich steht das Arbeitsheft noch im PDF Format zur Verfügung.
 
-- Lizenz: [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
-- [SVG Download](arbeitsheft.svg)
-- [PDF Download](arbeitsheft.pdf)
+:download[SVG Herunterladen]{src="arbeitsheft.svg"}
+
+:download[PDF Herunterladen]{src="arbeitsheft.pdf"}
+
+Lizenz: [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
