@@ -1,10 +1,10 @@
 {{#each pages}}
 ## {{{ title }}}
-{{ year }} - {{ series }} - {{ location }}
+{{ year }} - {{ series }} {{#if location}}- {{ location }}{{/if}}
 
 {{#each authors}}
 {{{ this }}}{{#unless @last}}, {{/unless}}
 {{/each}}
 
-[Paper]({{ paper }}) {{#if presentation}}- [Presentation]({{ presentation }}){{/if}} {{#if video}}- [Video]({{ video }}){{/if}}
+{{#if article}}[Artikel]({{article}}){{/if}}{{#if paper}}[Paper]({{ paper }}){{/if}} {{#if presentation}}- [Presentation]({{ presentation }}){{/if}} {{#if video}}- [Video]({{ video }}){{/if}}
 {{/each}}
