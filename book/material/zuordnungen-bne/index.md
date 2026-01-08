@@ -31,5 +31,5 @@ Das Arbeitsheft kann im SVG Format mit der Software [Inkscape](https://inkscape.
 Zusätzlich steht das Arbeitsheft noch im PDF Format zur Verfügung.
 
 - Lizenz: [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
-- [SVG Download](./arbeitsheft.svg)
-- [PDF Download](./arbeitsheft.pdf)
+- [SVG Download](arbeitsheft.svg)
+- [PDF Download](arbeitsheft.pdf)
