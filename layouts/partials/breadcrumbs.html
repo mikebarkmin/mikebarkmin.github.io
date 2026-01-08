@@ -1,7 +1,0 @@
-{{ with .Parent }}
-    {{ if not .IsHome }}
-    {{ partial "breadcrumbs.html" . }}
-    {{ if .Parent }}→{{ end }}
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ end }}
-{{ end }}

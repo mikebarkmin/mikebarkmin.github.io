@@ -1,0 +1,49 @@
+{
+  "name": "Mike Barkmin",
+  "description": "Meine persönliche Hyperbook-Seite",
+  "search": true,
+  "qrcode": false,
+  "author": {
+    "name": "Mike Barkmin",
+    "url": "https://www.barkmin.eu"
+  },
+  "logo": "/logo.png",
+  "license": "CC-BY-SA",
+  "language": "de",
+  "repo": {
+    "url": "https://github.com/mikebarkmin/mikebarkmin.github.io/edit/main/%path%",
+    "label": "Bearbeiten"
+  },
+  "styles": ["index.css"],
+  "colors": {
+    "brand": "#d96a6a"
+  },
+  "elements": {
+    "bookmarks": false
+  },
+  "links": [
+    {
+      "label": "Kontakt",
+      "links": [
+        {
+          "label": "Mail",
+          "icon": "📧",
+          "href": "mailto:mike@barkmin.eu"
+        },
+        {
+          "label": "Mastodon",
+          "icon": "🐘",
+          "href": "https://bildung.social/@mikebarkmin"
+        }
+      ]
+    },
+    {
+      "label": "OpenPatch",
+      "href": "https://openpatch.org"
+    },
+    {
+      "label": "Impressum",
+      "href": "/impressum"
+    }
+  ]
+}
