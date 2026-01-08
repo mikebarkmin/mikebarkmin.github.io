@@ -1,0 +1,10 @@
+{{#each pages}}
+## {{{ title }}}
+{{ year }} - {{ series }} - {{ location }}
+
+{{#each authors}}
+{{{ this }}}{{#unless @last}}, {{/unless}}
+{{/each}}
+
+[Paper]({{ paper }}) {{#if presentation}}- [Presentation]({{ presentation }}){{/if}} {{#if video}}- [Video]({{ video }}){{/if}}
+{{/each}}

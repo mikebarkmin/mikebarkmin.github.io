@@ -1,3 +1,0 @@
----
-title: Programmierung mit Scratch
----
