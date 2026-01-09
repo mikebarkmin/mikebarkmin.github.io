@@ -5,6 +5,7 @@ keywords:
   - allgemein
 lang: de
 layout: wide
+permaid: m002
 ---
 
 # Buddybook: Vorlage

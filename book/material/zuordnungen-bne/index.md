@@ -6,6 +6,7 @@ keywords:
   - unterstufe
   - bne
 lang: de
+permaid: m001
 ---
 
 # Unterrichtsreihe: Bildung für nachhaltige Entwicklung
