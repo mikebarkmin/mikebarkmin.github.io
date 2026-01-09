@@ -1,6 +1,6 @@
 ---
 name: React to Everything
-date: "2017-02-27"
+date: 2017-02-27
 ---
 
 In this article I will introduce you to a project which I have developed over the last few months. It aims to share as much code possible between Android, iOS, Web and Desktop, but tries to look and act like a first class citizen.

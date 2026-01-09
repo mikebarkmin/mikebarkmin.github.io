@@ -1,5 +1,6 @@
 ---
 name: Circle-Packing
+date: 2026-01-09
 ---
 
 # Circle-Packing

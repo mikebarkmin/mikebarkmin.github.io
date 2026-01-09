@@ -14,7 +14,6 @@
     "url": "https://github.com/mikebarkmin/mikebarkmin.github.io/edit/main/%path%",
     "label": "Bearbeiten"
   },
-  "styles": ["index.css"],
   "colors": {
     "brand": "#d96a6a"
   },

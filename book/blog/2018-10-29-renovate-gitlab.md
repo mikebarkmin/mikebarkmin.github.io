@@ -1,6 +1,6 @@
 ---
 name: Renovate Your Gitlab Projects Automatically
-date: "2018-10-29"
+date: 2018-10-29
 ---
 
 # Renovate Your Gitlab Projects Automatically
