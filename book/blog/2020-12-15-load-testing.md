@@ -1,6 +1,6 @@
 ---
 name: Spin up Real Infrastructure for Load Testing on HetznerCloud
-date: "2020-12-15"
+date: 2020-12-15
 ---
 
 # Spin up Real Infrastructure for Load Testing on HetznerCloud

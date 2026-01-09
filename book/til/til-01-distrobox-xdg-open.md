@@ -1,9 +1,9 @@
 ---
 name: Öffnen von Links aus exportierten Distrobox-Anwendungen
+date: 2023-12-22
 tags:
     - til
 lang: de
-date: 2023-12-22
 ---
 
 # Öffnen von Links aus exportierten Distrobox-Anwendungen

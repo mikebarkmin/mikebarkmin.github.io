@@ -13,6 +13,12 @@ Viel Spaß beim Stöbern!
 
 P.S.: Die Seite wurde mit meinem Projekt [Hyperbook](https://hyperbook.openpatch.org) erstellt.
 
+## Aktuelles
+
+::pagelist{format="ul" source="(href(/blog/.*) OR href(/publikationen/.*) OR href(/projekte/.*) OR href(/til/.*)) AND date(.*)" orderBy="date:desc" limit=5}
+
+## Bereiche
+
 :::tiles
 
 ::tile{title="Blog" href="/blog" icon=":speech_balloon:"}

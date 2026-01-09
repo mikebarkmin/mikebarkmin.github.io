@@ -1,6 +1,6 @@
 ---
 name: Getting Familiar with a New Programming Language
-date: "2020-12-15"
+date: 2020-12-15
 ---
 
 # Getting Familiar with a New Programming Language
