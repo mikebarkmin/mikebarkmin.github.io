@@ -1,4 +1,5 @@
 ---
+navigation: hidden
 authors:
   - Barkmin, M.
   - Bergner, N.

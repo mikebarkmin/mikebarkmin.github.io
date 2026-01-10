@@ -1,5 +1,5 @@
 ---
-pin: false
+navigation: hidden
 authors:
   - Barkmin, M.
 title: Konstruktion und Erprobung eines Bausteins zur Kompetenzmessung im Bereich der objektorientierten Programmierung in den Dimensionen Syntax und Semantik

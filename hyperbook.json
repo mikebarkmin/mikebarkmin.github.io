@@ -2,6 +2,9 @@
   "name": "Mike Barkmin",
   "description": "Meine persönliche Hyperbook-Seite",
   "search": true,
+  "breadcrumb": {
+    "home": "Startseite"
+  },
   "qrcode": false,
   "author": {
     "name": "Mike Barkmin",

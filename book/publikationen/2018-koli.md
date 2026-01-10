@@ -1,5 +1,5 @@
 ---
-pin: false
+navigation: hidden
 authors:
   - Kramer, M.
   - Barkmin, M.

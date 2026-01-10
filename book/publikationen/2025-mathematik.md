@@ -1,4 +1,5 @@
 ---
+navigation: hidden
 authors:
   - Barkmin, M.
 title: "Reflektiert essen: Schulgelände als Acker – Mit antiproportionalen Zuordnungen Ressourcen betrachten"

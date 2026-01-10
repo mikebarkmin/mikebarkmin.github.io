@@ -1,5 +1,5 @@
 ---
-pin: false
+navigation: hidden
 authors:
   - Tobinski, D.
   - Barkmin, M.
