@@ -1,5 +1,5 @@
 ---
-pin: true
+navigation: hidden
 authors:
   - Barkmin, M.
 title: Competency Structure Model for Programming for the Transition from School to University

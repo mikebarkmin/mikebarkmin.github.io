@@ -1,5 +1,5 @@
 ---
-pin: true
+navigation: hidden
 authors:
   - Barkmin, M.
 title: Notional Machines zur Entwicklung von mentalen Modellen zur Programmausführung von Java-Programmen am Beispiel des Java Memory Playgrounds

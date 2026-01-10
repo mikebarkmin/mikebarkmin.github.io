@@ -1,5 +1,5 @@
 ---
-pin: true
+navigation: hidden
 authors:
   - Barkmin, M.
 title: An Open Platform for Assessment and Training of Competencies

@@ -1,5 +1,5 @@
 ---
-pin: true
+navigation: hidden
 authors:
   - Barkmin, M.
 title: Den Übergang von der blockbasierten Programmierung in Scratch zur textbasierten Programmierung in Java gestalten am Beispiel von Scratch for Java

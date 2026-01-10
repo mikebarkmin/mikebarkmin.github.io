@@ -1,5 +1,5 @@
 ---
-pin: true
+navigation: hidden
 authors:
   - Barkmin, M.
 title: Automatic Evaluation of Tasks for Instantaneous Diagnostics in Computer Science Lessons

@@ -1,5 +1,5 @@
 ---
-pin: false
+navigation: hidden
 authors:
   - Borowy, S.
   - Barkmin, M.
