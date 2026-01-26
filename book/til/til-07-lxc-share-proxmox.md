@@ -34,6 +34,12 @@ vim /etc/pve/lxc/100.conf
 ```
 ...
 mp0: /mnt/pve/share,mp=/mnt/media
+lxc.idmap: u 0 100000 1005
+lxc.idmap: g 0 100000 1005
+lxc.idmap: u 1005 1005 1
+lxc.idmap: g 1005 1005 1
+lxc.idmap: u 1006 101006 64530
+lxc.idmap: g 1006 101006 64530
 ...
 ```
 
