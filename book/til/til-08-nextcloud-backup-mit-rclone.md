@@ -16,6 +16,14 @@ Dazu habe ich RClone installiert und anschließend konfiguriert.
 sudo apt install rclone
 ```
 
+Danach RClone konfigurieren.
+
+```bash
+rclone config
+```
+
+Also Name haben ich `hs` gewählt. Für Nextcloud wähle ich `WebDAV` als Speicherart und gebe die entsprechenden Zugangsdaten ein. Diese können bei den Persönlichen Einstellungen unter Sicherheit generiert werden.
+
 Dann habe ich einen Systemd-Service erstellt, der das Backup automatisch durchführt.
 
 ```bash
