@@ -5,7 +5,7 @@
   "breadcrumb": {
     "home": "Startseite"
   },
-  "qrcode": false,
+  "qrcode": true,
   "author": {
     "name": "Mike Barkmin",
     "url": "https://www.barkmin.eu"
