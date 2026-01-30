@@ -17,7 +17,7 @@ Hier ist ein Typst-Dokument, das aus einer CSV-Datei ein PDF erstellt, welches m
 @source dest="main.typ" src="urkunden.typ"
 :::
 
-Die CSV-Datei setze ich auf der anonymisierten Biber-Ergebnisliste und der Klassenliste, als Webunites-Export, zusammen. Diese hat dann folgende Struktur:
+Die CSV-Datei setze aus der anonymisierten Biber-Ergebnisliste und der Klassenliste, ein Webunites-Export, zusammen. Diese hat dann folgende Struktur:
 
 ```csv
 Langname	Vorname	Klasse	Preisstufe
