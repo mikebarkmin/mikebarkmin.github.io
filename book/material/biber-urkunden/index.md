@@ -5,6 +5,7 @@ keywords:
   - allgemein
 lang: de
 permaid: m003
+layout: wide
 ---
 
 # Biber-Urkunden
