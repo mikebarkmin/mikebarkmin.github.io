@@ -16,39 +16,37 @@
 )
 
 #for schueler in daten {
-
   let vorname = schueler.Vorname
   let nachname = schueler.Langname
   let preisstufe = schueler.Preisstufe
 
   if vorname == none { continue }
 
-  place(left+horizon)[
-  #v(11em)
+  place(left + horizon)[
+    #v(11em)
     #if preisstufe == "3. Rang" {
       [
-        *#vorname #nachname* hat teilgenommen  
-        und einen *3. Rang* erreicht.  
+        *#vorname #nachname* hat teilgenommen
+        und einen *3. Rang* erreicht.
       ]
     } else if preisstufe == "2. Rang" {
       [
-        *#vorname #nachname* hat teilgenommen  
-        und einen *2. Rang* erreicht.  
+        *#vorname #nachname* hat teilgenommen
+        und einen *2. Rang* erreicht.
       ]
     } else if preisstufe == "1. Rang" {
       [
-        *#vorname #nachname* hat teilgenommen  
-        und einen *1. Rang* erreicht.  
+        *#vorname #nachname* hat teilgenommen
+        und einen *1. Rang* erreicht.
       ]
     } else if preisstufe == "Anerkennung" {
-
       [
-        *#vorname #nachname* hat teilgenommen  
-        und eine *Anerkennung* erhalten.  
+        *#vorname #nachname* hat teilgenommen
+        und eine *Anerkennung* erhalten.
       ]
     } else {
       [
-        *#vorname #nachname* hat teilgenommen  
+        *#vorname #nachname* hat teilgenommen
       ]
     }
 
