@@ -15,6 +15,7 @@ Ich lasse meine Schüler:innen immer anonym am Informatikbiber-Wettbewerb teilne
 Hier ist ein Typst-Dokument, das aus einer CSV-Datei ein PDF erstellt, welches man zum Bedrucken der Blank-Urkunden verwenden kann.
 
 :::typst{mode="edit" id="biber-urkunden"}
+::snippet{#fonts}
 @source dest="main.typ" src="urkunden.typ"
 :::
 

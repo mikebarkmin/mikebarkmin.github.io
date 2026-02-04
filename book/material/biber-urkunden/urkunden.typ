@@ -6,7 +6,7 @@
 
 #set text(
   size: 24pt,
-  // font: "Fira Sans",
+  font: "Fira Sans",
 )
 
 #let daten = csv(
