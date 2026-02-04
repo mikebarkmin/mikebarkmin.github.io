@@ -1,10 +1,5 @@
 ---
 title: Schießbude
-keywords:
-    - informatik
-    - unterstufe
-    - scratch
-    - spieleentwicklung
 permaid: i002
 ---
 

@@ -1,10 +1,5 @@
 ---
 title: Labyrinth
-keywords:
-    - informatik
-    - unterstufe
-    - scratch
-    - spieleentwicklung
 permaid: i003
 ---
 

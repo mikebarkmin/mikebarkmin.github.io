@@ -1,10 +1,5 @@
 ---
 title: Donut-Klicker
-keywords:
-    - informatik
-    - unterstufe
-    - scratch
-    - spieleentwicklung
 permaid: i001
 ---
 
