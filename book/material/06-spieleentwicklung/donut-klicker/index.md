@@ -26,6 +26,8 @@ https://informatik.openpatch.org/unterstufe/spieleentwicklung/donut-klicker/
 
 :::typst{mode="edit"}
 
+::snippet{#fonts}
+
 @source dest="main.typ" src="praesentation.typ"
 
 :::
