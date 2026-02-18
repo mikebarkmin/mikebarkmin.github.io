@@ -111,7 +111,8 @@ Heute gibt es Milliarden von Spielerinnen und Spielern weltweit, und die Spieleb
   Künstliche Intelligenz hält Einzug in die Spieleentwicklung. KI-Werkzeuge helfen Entwicklerinnen und Entwicklern dabei, Grafiken zu erstellen, Texte zu schreiben oder Fehler im Code zu finden – Aufgaben, für die früher viele Fachleute nötig waren. Gleichzeitig verändert KI auch das Spielerlebnis selbst: Figuren im Spiel können sich intelligenter verhalten, auf Sprache reagieren oder sich an den Spielstil anpassen. Wie sich das auf Berufe in der Branche auswirken wird, ist noch offen – fest steht nur, dass sich gerade sehr viel verändert.
 ]
 
-#v(0.5cm)
+
+#pagebreak()
 
 // Aufgaben
 #block(

@@ -201,28 +201,3 @@ Wer steckt eigentlich hinter deinen Lieblingsspielen? Ein Spiel entsteht nie all
     ],
   )
 ]
-
-#v(0.5cm)
-
-#block(
-  fill: rgb("#f0f0f0"),
-  stroke: 1pt + gray,
-  radius: 0.3cm,
-  inset: 0.5cm,
-  width: 100%,
-)[
-  #grid(
-    columns: (auto, 1fr),
-    gutter: 0.4cm,
-    align: top,
-    text(size: 1.5em)[🤝],
-    [
-      #text(size: 10pt)[
-        #text(weight: "bold")[Übrigens:] Beide Berufe brauchen einander. Ein Game Designer ohne Programmierer hat nur Ideen auf Papier. Ein Programmierer ohne Game Designer schreibt Code für ein Spiel, das niemand spielen möchte. Gute Spieleentwicklung ist immer Teamarbeit.
-
-        #v(0.2cm)
-        #text(weight: "bold")[Bonusfrage:] In welchem Beruf würdest du lieber arbeiten? Schreib es auf die Rückseite – und überzeuge jemanden neben dir.
-      ]
-    ],
-  )
-]
