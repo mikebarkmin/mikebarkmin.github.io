@@ -76,6 +76,16 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 
 :::
 
+### Arbeitsblatt "Game Center erkunden"
+
+:::typst{mode="edit"}
+
+::snippet{#fonts}
+@source dest="main.typ" src="arbeitsblatt-gamecenter.typ"
+
+:::
+
+
 ### Arbeitsblatt „Projekt Planen“
 
 :::typst{mode="edit"}
@@ -94,3 +104,38 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 @source dest="main.typ" src="arbeitsblatt-beispiel.typ"
 
 :::
+
+### Informationstexte
+
+::::collapsible{title="Ablauf Spielentwicklung"}
+
+:::typst{mode="edit"}
+
+::snippet{#fonts}
+@source dest="main.typ" src="ablauf-spieleentwicklung.typ"
+
+:::
+
+::::
+
+::::collapsible{title="Berufe Spieleentwicklung"}
+
+:::typst{mode="edit"}
+
+::snippet{#fonts}
+@source dest="main.typ" src="berufe-spieleentwicklung.typ"
+
+:::
+
+::::
+
+::::collapsible{title="Geschichte Spieleentwicklung"}
+
+:::typst{mode="edit"}
+
+::snippet{#fonts}
+@source dest="main.typ" src="geschichte-spieleentwicklung.typ"
+
+:::
+
+::::
