@@ -57,9 +57,7 @@
 
     #colbreak()
 
-    #text(size: 1.2em)[
-      Ich brauche dein Feedback! Wie gefällt dir das Spiel?
-    ]
+    Ich brauche dein Feedback! Wie gefällt dir das Spiel?
 
     1. Gehe auf *informatik.openpatch.org* auf die Seite *6 (2025/2026)*.
     2. Gib bei Donut-Klicker v0 das Passwort *dda* ein.
@@ -86,9 +84,7 @@
 
     #colbreak()
 
-    #text(size: 1.2em)[
-      Finde heraus, was sich im Vergleich zur vorherigen Version geändert hat!
-    ]
+    Finde heraus, was sich im Vergleich zur vorherigen Version geändert hat!
 
     1. Gehe auf *informatik.openpatch.org* auf die Seite *6 (2025/2026)*.
     2. Gib bei Donut-Klicker v1 das Passwort *dkd* ein.
@@ -115,9 +111,7 @@
 
     #colbreak()
 
-    #text(size: 1.1em)[
-      Überlege, was du im Spiel verändern möchtest!
-    ]
+    Überlege, was du im Spiel verändern möchtest!
 
     1. Welche Funktionen möchtest du hinzufügen oder ändern?
     2. Schreibe deine Ideen auf!
