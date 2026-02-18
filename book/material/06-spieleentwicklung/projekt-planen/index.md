@@ -85,3 +85,12 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 
 :::
 
+
+#### Beispiel für ausgefülltes Arbeitsblatt
+
+:::typst{mode="edit"}
+
+::snippet{#fonts}
+@source dest="main.typ" src="arbeitsblatt-beispiel.typ"
+
+:::
