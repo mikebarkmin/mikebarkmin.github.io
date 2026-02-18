@@ -107,6 +107,8 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 
 ### Informationstexte
 
+Die Informationstext sind mit Claude Sonnet 4.6 erstellt und von mir überarbeitet worden. Sie dienen als Hintergrundinformationen für die Lehrkraft, um die Schüler:innen bei Fragen zum Thema Spieleentwicklung kompetent unterstützen zu können.
+
 ::::collapsible{title="Ablauf Spielentwicklung"}
 
 :::typst{mode="edit"}
