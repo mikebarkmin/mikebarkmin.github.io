@@ -18,9 +18,63 @@
 
 // ===== 1 =====
 #slide[
-  #set align(top)
-  = Was macht ein gutes Spiel aus?
-  Murmelphase: Was macht für dich ein gutes Spiel aus?
+  #set align(horizon)
+  #grid(
+    columns: (1fr, auto, 1fr, auto, 1fr),
+    gutter: 0pt,
+    // Schritt 1
+    block(
+      fill: rgb("#23373b"),
+      radius: 8pt,
+      inset: 20pt,
+      width: 100%,
+      [
+        #text(size: 2em)[🔍]\
+        #v(6pt)
+        #text(weight: "bold", size: 1.1em, fill: white)[Spiele erkunden]
+        #v(4pt)
+        #text(size: 0.85em, fill: rgb("#cccccc"))[Verschiedene Spiele spielen & beobachten]
+      ],
+    ),
+    // Pfeil
+    pad(x: 8pt)[
+      #set align(horizon)
+      #text(size: 2em, fill: rgb("#eb811b"))[→]
+    ],
+    // Schritt 2
+    block(
+      fill: rgb("#23373b"),
+      radius: 8pt,
+      inset: 20pt,
+      width: 100%,
+      [
+        #text(size: 2em)[🎯]\
+        #v(6pt)
+        #text(weight: "bold", size: 1.1em, fill: white)[Spiel auswählen]
+        #v(4pt)
+        #text(size: 0.85em, fill: rgb("#cccccc"))[Ein Lieblingsspiel\nals Basis nehmen]
+      ],
+    ),
+    // Pfeil
+    pad(x: 8pt)[
+      #set align(horizon)
+      #text(size: 2em, fill: rgb("#eb811b"))[→]
+    ],
+    // Schritt 3
+    block(
+      fill: rgb("#eb811b"),
+      radius: 8pt,
+      inset: 20pt,
+      width: 100%,
+      [
+        #text(size: 2em)[💡]\
+        #v(6pt)
+        #text(weight: "bold", size: 1.1em, fill: white)[Eigene Ideen entwickeln]
+        #v(4pt)
+        #text(size: 0.85em, fill: white)[Kreativ werden &\netwas Neues erschaffen]
+      ],
+    ),
+  )
 ]
 
 
@@ -49,36 +103,6 @@
   - Warum dieses Spiel?
   - Welches Potenzial siehst du?
   - Was willst du verändern?
-]
-
-// ===== 4 =====
-#slide[
-  = Ideen in der Gruppe entwickeln
-  Diskutiert in drei Bereichen:
-
-  _Gameplay / Regeln_
-  - neue Hindernisse, Gegner, Power-Ups
-  - neue Levels oder Spielmodi
-
-  _Schwierigkeit_
-  - leichter oder schwerer?
-  - für Anfänger oder Profis?
-
-  _Optik & Feedback_
-  - neue Figuren / Hintergründe
-  - Sounds, Animationen, Punkte
-]
-
-// ===== 5 =====
-#slide[
-  = Präsentation & Feedback
-
-  Jede Gruppe präsentiert kurz ihre Idee.
-
-  Die Klasse gibt:
-  - 👍 1 positives Feedback
-  - 💡 1 Verbesserungsvorschlag
-  - ❓ 1 Frage zur Idee
 ]
 
 #slide[
