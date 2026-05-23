@@ -29,6 +29,8 @@ P.S.: Die Seite wurde mit meinem Projekt [Hyperbook](https://hyperbook.openpatch
 
 ::tile{title="Material" href="/material" icon=":open_file_folder:"}
 
+::tile{title="3D-Modelle" href="/3d-modelle" icon=":orange_heart:"}
+
 ::tile{title="TIL" href="/til" icon=":bulb:"}
 
 ::tile{title="Tools" href="/tools" icon=":wrench:"}
