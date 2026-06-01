@@ -10,7 +10,7 @@ Wer es schafft, die meiste Fläche zu "reinigen", gewinnt.
 
 Hier ist ein Beispielvideo, wie so eine Challenge aussehen könnte:
 
-::video{src="./beispiel.mp4"}
+::video{src="./beispiel.webm"}
 
 Am Ende der Challenge erhalten die Teilnehmer:innen eine Medaille.
 
