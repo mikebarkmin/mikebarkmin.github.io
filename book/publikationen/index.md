@@ -5,4 +5,4 @@ navigation: page
 
 # Publikationen :books:
 
-::pagelist{format="#publikationen" source="href(/publikationen/.*)" orderBy="name:desc"}
+::pagelist{format="#publikationen" source="href(/publikationen/.*)" orderBy="year:desc"}
