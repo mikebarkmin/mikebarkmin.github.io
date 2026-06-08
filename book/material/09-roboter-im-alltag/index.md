@@ -13,3 +13,5 @@ permaid: 9-roboter-im-alltag
 [Staubsaugroboter Challenge](./02-staubsaugroboter-challenge/)
 
 [Staubsaugroboter und Sicherheit](./03-staubsaugroboter-und-sicherheit/)
+
+[Roboter: Chance oder Risiko?](./04-roboter-chance-risiko/)
