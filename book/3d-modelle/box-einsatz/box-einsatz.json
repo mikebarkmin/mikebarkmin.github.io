@@ -1,0 +1,19 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "Neue Parameter Liste1": {
+            "$fn": "100",
+            "columns": "3",
+            "h": "26",
+            "l": "204",
+            "rounded_edge_left_back": "false",
+            "rounded_edge_left_front": "false",
+            "rounded_edge_right_back": "false",
+            "rounded_edge_right_front": "false",
+            "rounding": "11",
+            "rows": "3",
+            "w": "154",
+            "wall": "0.80000000000000004"
+        }
+    }
+}
