@@ -6,4 +6,4 @@ title: Keyboard Helpers
 
 ![Keyboard Helpers](./keyboard-helpers.png)
 
-::openscad{src="./keyboard-helpers.scad"}
+::openscad{src="./keyboard-helpers.scad" library="BOSL2"}
