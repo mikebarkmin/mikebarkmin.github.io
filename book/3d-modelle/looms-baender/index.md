@@ -6,8 +6,8 @@ title: "Loom Bänder"
 
 ## Halter
 
-::openscad{src="./loom-halter.scad"}
+::openscad{src="./loom-halter.scad" library="BOSL2"}
 
 ## Gabel
 
-::openscad{src="./loom-gabel.scad"}
+::openscad{src="./loom-gabel.scad" library="BOSL2"}
