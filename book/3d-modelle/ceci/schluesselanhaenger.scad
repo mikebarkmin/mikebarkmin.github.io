@@ -2,7 +2,7 @@ include <BOSL2/std.scad>
 
 $fn = 120;
 
-contour_h = 0.3;
+contour_h = 0.4;
 h = 2.1 - contour_h;
 
 module einkaufschip() {
