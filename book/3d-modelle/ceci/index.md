@@ -6,7 +6,9 @@ title: Ceci-Merch
 
 ## Schlüsselanhänger
 
-::openscad{src="./schluesselanhaenger.scad" library="BOSL2" /}
+::openscad{src="./schluesselanhaenger.scad" library="BOSL2" }
+
+::openscad{src="./schluesselanhaenger_xl.scad" library="BOSL2" }
 
 ## Münze
 
