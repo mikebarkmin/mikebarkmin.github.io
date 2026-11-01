@@ -34,7 +34,7 @@
 // ── Titel ────────────────────────────────────────────────────────────────────
 = Das Smartphone und das Internet
 
-== 1. Über dich und mein Smartphone
+== 1. Über mich und mein Smartphone
 
 // ── Obere Hälfte: Smartphone (links) und Kopf (rechts) ───────────────────────
 #grid(
