@@ -8356,10 +8356,12 @@ function dict_size(d) =
 
 // Extract one data bit (1=white, 0=black).
 // Bits are packed MSB-first, row-major: bit index = row*gs + col.
+// The final byte may be partial; its valid bits are right-justified.
 function _bit(bytes, row, col, gs) =
     let(idx = row*gs + col,
-        b   = floor(idx/8),
-        pos = 7 - idx%8)
+        b        = floor(idx/8),
+        valid_bits = min(8, gs*gs - b*8),
+        pos      = valid_bits - 1 - idx%8)
     floor(bytes[b] / pow(2, pos)) % 2;
 
 // ── Marker modules ────────────────────────────────────────────────────────────
