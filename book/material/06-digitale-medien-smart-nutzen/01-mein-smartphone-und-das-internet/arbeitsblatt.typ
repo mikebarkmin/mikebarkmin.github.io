@@ -1,6 +1,6 @@
 #import "@preview/cetz:0.3.2": canvas, draw
 
-#set document(title: "Dein Smartphone und das Internet")
+#set document(title: "Mein Smartphone und das Internet")
 #set page(
   paper: "a4",
   margin: (x: 1.5cm, y: 2.5cm),
