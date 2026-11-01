@@ -70,33 +70,33 @@ Jede Gruppe erstellt ein Verbraucherplakat „Der sichere Staubsaugroboter" mit:
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="praesentation.typ"
+::file{path="main.typ" src="praesentation.typ"}
 :::
 
 ### Arbeitsblatt: Marktanalyse
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-marktanalyse.typ"
+::file{path="main.typ" src="arbeitsblatt-marktanalyse.typ"}
 :::
 
 ### Arbeitsblatt: Videoanalyse
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-video.typ"
+::file{path="main.typ" src="arbeitsblatt-video.typ"}
 :::
 
 ### Arbeitsblatt: BSI-Empfehlungen
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-bsi.typ"
+::file{path="main.typ" src="arbeitsblatt-bsi.typ"}
 :::
 
 ### Arbeitsblatt: Datenschutz-Check
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-datenschutz-check.typ"
+::file{path="main.typ" src="arbeitsblatt-datenschutz-check.typ"}
 :::

@@ -14,4 +14,6 @@ Der magnetische Foto-Rahmen ist vollkommen parametrisch und kann für jede belie
 
 :::
 
-::openscad{src="./magnetischer-foto-rahmen.scad" library="BOSL2"}
+:::openscad{id="a1fa6466adf97ae9cc57fb3c17d46e0ca5adb48241210bdc4974f9c0acaf1c62" library="BOSL2"}
+::file{path="main.scad" src="./magnetischer-foto-rahmen.scad"}
+:::

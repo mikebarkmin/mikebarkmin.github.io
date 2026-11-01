@@ -72,7 +72,7 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="praesentation.typ"
+::file{path="main.typ" src="praesentation.typ"}
 
 :::
 
@@ -81,7 +81,7 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-gamecenter.typ"
+::file{path="main.typ" src="arbeitsblatt-gamecenter.typ"}
 
 :::
 
@@ -91,7 +91,7 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt.typ"
+::file{path="main.typ" src="arbeitsblatt.typ"}
 
 :::
 
@@ -101,7 +101,7 @@ Die Arbeitsblätter werden von mir eingesammelt und dienen als Grundlage für di
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-beispiel.typ"
+::file{path="main.typ" src="arbeitsblatt-beispiel.typ"}
 
 :::
 
@@ -114,7 +114,7 @@ Die Informationstext sind mit Claude Sonnet 4.6 erstellt und von mir überarbeit
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="ablauf-spieleentwicklung.typ"
+::file{path="main.typ" src="ablauf-spieleentwicklung.typ"}
 
 :::
 
@@ -125,7 +125,7 @@ Die Informationstext sind mit Claude Sonnet 4.6 erstellt und von mir überarbeit
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="berufe-spieleentwicklung.typ"
+::file{path="main.typ" src="berufe-spieleentwicklung.typ"}
 
 :::
 
@@ -136,7 +136,7 @@ Die Informationstext sind mit Claude Sonnet 4.6 erstellt und von mir überarbeit
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="geschichte-spieleentwicklung.typ"
+::file{path="main.typ" src="geschichte-spieleentwicklung.typ"}
 
 :::
 

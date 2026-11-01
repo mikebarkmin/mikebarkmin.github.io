@@ -22,6 +22,6 @@ Falls die Schüler:innen mal das Interesse verlieren, eignet sich \#Mausprobiert
 
 ::snippet{#fonts}
 
-@source dest="main.typ" src="./arbeitsblatt.typ"
+::file{path="main.typ" src="./arbeitsblatt.typ"}
 
 :::

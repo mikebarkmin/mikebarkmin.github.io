@@ -11,6 +11,6 @@ title: Präsentation
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="praesentation.typ"
+::file{path="main.typ" src="praesentation.typ"}
 
 :::

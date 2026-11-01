@@ -28,6 +28,6 @@ https://informatik.openpatch.org/unterstufe/spieleentwicklung/donut-klicker/
 
 ::snippet{#fonts}
 
-@source dest="main.typ" src="praesentation.typ"
+::file{path="main.typ" src="praesentation.typ"}
 
 :::

@@ -10,25 +10,25 @@ Die Schüler:innen haben vorher mit LEGO Mindstorms EV3 Roboter gebaut und progr
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="praesentation.typ"
+::file{path="main.typ" src="praesentation.typ"}
 :::
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-spirale.typ"
+::file{path="main.typ" src="arbeitsblatt-spirale.typ"}
 :::
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-wandfolge.typ"
+::file{path="main.typ" src="arbeitsblatt-wandfolge.typ"}
 :::
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-zeilen.typ"
+::file{path="main.typ" src="arbeitsblatt-zeilen.typ"}
 :::
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="arbeitsblatt-zufall.typ"
+::file{path="main.typ" src="arbeitsblatt-zufall.typ"}
 :::

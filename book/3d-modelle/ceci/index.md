@@ -6,10 +6,16 @@ title: Ceci-Merch
 
 ## Schlüsselanhänger
 
-::openscad{src="./schluesselanhaenger.scad" library="BOSL2" }
+:::openscad{id="c83d8cd9035278d7cf9b0cf1cdd7d23ff53f059fafa8c57a309c17ddbc8410c0" library="BOSL2"}
+::file{path="main.scad" src="./schluesselanhaenger.scad"}
+:::
 
-::openscad{src="./schluesselanhaenger_xl.scad" library="BOSL2" }
+:::openscad{id="862523bfc47e655f5df64274fd1f9f745adc3be8bba5c4adeccbbe3fb9094097" library="BOSL2"}
+::file{path="main.scad" src="./schluesselanhaenger_xl.scad"}
+:::
 
 ## Münze
 
-::openscad{src="./muenze.scad" library="BOSL2" /}
+:::openscad{id="a84d8d512179c6893f4788100666b2e582d608e5b0aeebac72844cc445b28171" library="BOSL2"}
+::file{path="main.scad" src="./muenze.scad"}
+:::

@@ -11,7 +11,7 @@ title: Projekt umsetzen
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="dokumentation.typ"
+::file{path="main.typ" src="dokumentation.typ"}
 
 :::
 
@@ -20,6 +20,6 @@ title: Projekt umsetzen
 :::typst{mode="edit"}
 
 ::snippet{#fonts}
-@source dest="main.typ" src="praesentation.typ"
+::file{path="main.typ" src="praesentation.typ"}
 
 :::

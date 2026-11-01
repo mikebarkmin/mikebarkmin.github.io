@@ -22,8 +22,12 @@ Am Ende der Challenge erhalten die Teilnehmer:innen eine Medaille.
 
 ### ArUco Marker
 
-::openscad{src="./aruco_markers.scad"}
+:::openscad{id="42037ba9a61a47b523f1fb67d0aa3cb4907182f1892aa0ac58bd808eb2cd1ee5"}
+::file{path="main.scad" src="./aruco_markers.scad"}
+:::
 
 ### Medaille
 
-::openscad{src="./cleaning-robot.scad"}
+:::openscad{id="aa881975ca51a97c0a367651df5d467dd39083eabe037cdf3a1108f468f955a9"}
+::file{path="main.scad" src="./cleaning-robot.scad"}
+:::

@@ -20,7 +20,7 @@ title: "Kommunikation im Handynetz"
 
 :::typst{mode="edit"}
 ::snippet{#fonts}
-@source dest="main.typ" src="../arbeitsblatt.typ"
+::file{path="main.typ" src="../arbeitsblatt.typ"}
 :::
 
 ### Wie bekommt das Handy Netz?

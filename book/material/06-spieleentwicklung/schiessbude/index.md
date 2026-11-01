@@ -16,8 +16,8 @@ Bei diesem Projekt testen die Schüler:innen zuerst ein vorgefertigtes Spiel, um
 Hier geht es zu den Schüler:innenmaterialien für das Projekt:
 https://informatik.openpatch.org/unterstufe/spieleentwicklung/schiessbude/
 
-:::typst{mode="edit"}
+:::typst{id="44bef84c0e964fa74ce02c86ca2613f1ca2d89f59899adb86b4b7e534eaa2831" mode="edit"}
 
-@source dest="main.typ" src="praesentation.typ"
+::file{path="main.typ" src="praesentation.typ"}
 
 :::

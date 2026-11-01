@@ -16,4 +16,6 @@ Wenn du auch einen farbigen Rand haben möchtest, kannst du bei deinem Slicer ei
 ![](./box-einsatz-2.webp)
 :::
 
-::openscad{src="./box-einsatz.scad" library="BOSL2"}
+:::openscad{id="83072c8f8ff987fc9c7ecd52be5b27f9627218bb74730063d5506c8f6c6c6883" library="BOSL2"}
+::file{path="main.scad" src="./box-einsatz.scad"}
+:::

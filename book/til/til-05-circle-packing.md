@@ -19,7 +19,7 @@ Hier ist ein einfacher Circle-Packing-Algorithmus in p5.js. Dieser funktioniert 
 3. Wenn der Radius mindestens 1 ist, fügen wir den Kreis der Liste hinzu.
 4. Wir wiederholen dies, bis wir eine maximale Anzahl von
 
-:::p5{height=400 editor=true}
+:::p5{id="bbd94b851e9352780f7a355a2c753ac4ec0553aa557248eaeda37033940365a1" height="400" mode="editor"}
 
 ```js
 function setup() {
@@ -77,7 +77,7 @@ Außerdem ziehen wir mehr Parameter aus dem Algorithmus, damit wir die Größe d
 
 Hier ist die angepasste Version:
 
-:::p5{height=400 editor=true}
+:::p5{id="154b12d384103002c8565010ca5b68e619739fbb9e1e445db05ad94bb2d6ccc4" height="400" mode="editor"}
 
 ```js
 function setup() {
