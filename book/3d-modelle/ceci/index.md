@@ -12,6 +12,7 @@ title: Ceci-Merch
 
 :::openscad{id="862523bfc47e655f5df64274fd1f9f745adc3be8bba5c4adeccbbe3fb9094097" library="BOSL2"}
 ::file{path="main.scad" src="./schluesselanhaenger_xl.scad"}
+::file{path="fonts/Storytime.ttf" src="./Storytime.ttf"}
 :::
 
 ## Münze
