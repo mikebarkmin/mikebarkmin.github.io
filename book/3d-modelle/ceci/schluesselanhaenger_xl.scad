@@ -1,4 +1,5 @@
 include <BOSL2/std.scad>
+use <fonts/Storytime.ttf>
 $fn = 120;
 
 // Set this to render only what you need:
